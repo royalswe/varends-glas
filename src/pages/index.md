@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Kaffe är gott
+title: ' Värens glas'
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: ss
 mainpitch:
   title: Why Kaldi
   description: >
