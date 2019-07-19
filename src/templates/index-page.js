@@ -23,13 +23,13 @@ export const IndexPageTemplate = ({
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
+        backgroundAttachment: `fixed`
       }}
     >
       <div
         style={{
           display: 'flex',
-          height: '150px',
+          height: '200px',
           lineHeight: '1',
           justifyContent: 'space-around',
           alignItems: 'left',
@@ -39,9 +39,7 @@ export const IndexPageTemplate = ({
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -52,16 +50,23 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            textAlign: 'center'
           }}
         >
           {subheading}
         </h3>
+        <Link className="button is-outlined is-large" style={{
+              color: '#fff',
+              backgroundColor: '#28a745',
+              borderColor: '#28a745',
+              alignSelf: 'center',
+              padding: '25px',
+              marginTop: '25px'
+        }} to="/contact">Kontakta oss</Link>
       </div>
     </div>
     <section className="section section--gradient">

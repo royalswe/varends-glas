@@ -2,9 +2,9 @@ var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Värends glas – Uterum | Glasmästeri | Fönster',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Värends glas hjälper dig med glasmästertjänster, inglasningar och fönster. Vi utgår från Alvesta och Växjö men arbetar i hela Kronobergs Län.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
