@@ -1,21 +1,21 @@
 ---
-templateKey: 'about-page'
-path: /about
+templateKey: about-page
 title: Om våra värderingar
+image: /img/safari-pinned-tab.svg
 employees:
   employee:
-    - image: /img/rasmus-diploma.jpg
+    - email: rille@gmail.com
+      image: /img/rasmus-diploma.jpg
       name: Rasmus Karlsson
       phone: 070xxxxxx
-      email: rille@gmail.com
-    - image: /img/rasmus-diploma.jpg
+    - email: rille@gmail.com
+      image: /img/safari-pinned-tab.svg
       name: Rasmus Karlsson
       phone: 070xxxxxx
-      email: rille@gmail.com
-    - image: /img/rasmus-diploma.jpg
+    - email: rille@gmail.com
+      image: /img/rasmus-diploma.jpg
       name: Rasmus Karlsson
       phone: 070xxxxxx
-      email: rille@gmail.com
 ---
 ### Shade-grown coffee
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
