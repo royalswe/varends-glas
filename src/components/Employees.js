@@ -1,16 +1,19 @@
 import React from 'react'
-import Img from 'gatsby-image'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+
 
 const Employees = ({gridItems}) => {
-    const imageStyle = { borderRadius: '5px' }
+    gridItems.forEach(item =>{
+        item.alt = item.name // set img alt text same as the employer name
+    })
+    
     return (
     <div class="columns is-multiline is-mobile">
 
         {gridItems.map((item, index) =>
-            
             <div class="column is-6" style={{}} key={index}>
                 <picture>
-                    <Img style={imageStyle} fluid={item.image.childImageSharp.fluid} alt="Bild på Anställd" />
+                    <PreviewCompatibleImage imageInfo={item} />
                 </picture>
                 <ul>
                     <li>{item.name}</li>
