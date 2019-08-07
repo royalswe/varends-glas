@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Employees from '../components/Employees'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, intro, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -12,10 +13,13 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
+
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
+              <Employees gridItems={intro.blurbs} />
+
               <PageContent className="content" content={content} />
             </div>
           </div>
@@ -40,6 +44,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        intro={post.frontmatter.intro}
       />
     </Layout>
   )
@@ -57,6 +62,20 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        intro {
+          blurbs {
+            text
+            phone
+            email
+            image {
+              childImageSharp {
+                fluid(maxWidth: 640, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

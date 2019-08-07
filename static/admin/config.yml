@@ -44,6 +44,8 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Image, name: image, widget: image}
+          - {label: Intro, name: intro, widget: object, fields: [{ label: Heading, name: heading, widget: string }, { label: Description, name: description, widget: text }, { label: Blurbs, name: blurbs, widget: list, fields: [{ label: Image, name: image, widget: image }, { label: Name, name: name, widget: text }, { label: Phone, name: phone, widget: text }, { label: Email, name: email, widget: text }]}]}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

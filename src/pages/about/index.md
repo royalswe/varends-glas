@@ -1,7 +1,21 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our values
+title: Om våra värderingar
+intro:
+  blurbs:
+    - image: /img/rasmus-diploma.jpg
+      name: Rasmus Karlsson
+      phone: 070xxxxxx
+      email: rille@gmail.com
+    - image: /img/rasmus-diploma.jpg
+      name: Rasmus Karlsson
+      phone: 070xxxxxx
+      email: rille@gmail.com
+    - image: /img/rasmus-diploma.jpg
+      name: Rasmus Karlsson
+      phone: 070xxxxxx
+      email: rille@gmail.com
 ---
 ### Shade-grown coffee
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.

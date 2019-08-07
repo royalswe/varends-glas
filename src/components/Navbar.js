@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import facebook from '../img/social/facebook.svg'
-import logo from '../img/logo-title.png'
+import logo from '../img/logo-title.svg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -60,19 +60,19 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item" activeClassName={'active-page'} to="/about">
                 Om oss
               </Link>
-              <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" activeClassName={'active-page'} to="/products">
                 Våra tjänster
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item" activeClassName={'active-page'} to="/blog">
                 Referenser
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item" activeClassName={'active-page'} to="/contact">
                 Kontakt
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
+              <Link className="navbar-item" activeClassName={'active-page'} to="/contact/examples">
                 Form Examples
               </Link>
             </div>
