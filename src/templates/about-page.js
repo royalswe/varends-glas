@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Employees from '../components/Employees'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, intro, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, employees, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -18,8 +18,7 @@ export const AboutPageTemplate = ({ title, content, intro, contentComponent }) =
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <Employees gridItems={intro.blurbs} />
-
+              <Employees gridItems={employees.employee} />
               <PageContent className="content" content={content} />
             </div>
           </div>
@@ -44,7 +43,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
-        intro={post.frontmatter.intro}
+        employees={post.frontmatter.employees}
       />
     </Layout>
   )
@@ -62,9 +61,9 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
-        intro {
-          blurbs {
-            text
+        employees {
+          employee {
+            name
             phone
             email
             image {

@@ -12,9 +12,11 @@ const Employees = ({gridItems}) => {
                 <picture>
                     <Img style={imageStyle} fluid={item.image.childImageSharp.fluid} alt="Bild på Anställd" />
                 </picture>
-                <p>{item.name}</p>
-                <p>{item.phone}</p>
-                <p>{item.email}</p>
+                <ul>
+                    <li>{item.name}</li>
+                    <li>{item.phone}</li>
+                    <li>{item.email}</li>
+                </ul>
             </div>
         )}
     </div>

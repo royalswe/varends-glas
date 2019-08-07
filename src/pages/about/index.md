@@ -2,8 +2,8 @@
 templateKey: 'about-page'
 path: /about
 title: Om våra värderingar
-intro:
-  blurbs:
+employees:
+  employee:
     - image: /img/rasmus-diploma.jpg
       name: Rasmus Karlsson
       phone: 070xxxxxx
