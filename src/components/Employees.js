@@ -8,10 +8,10 @@ const Employees = ({gridItems}) => {
     })
     
     return (
-    <div class="columns is-multiline is-mobile">
+    <div className="columns is-multiline is-mobile">
 
         {gridItems.map((item, index) =>
-            <div class="column is-6" style={{}} key={index}>
+            <div className="column is-6" style={{}} key={index}>
                 <picture>
                     <PreviewCompatibleImage imageInfo={item} />
                 </picture>
