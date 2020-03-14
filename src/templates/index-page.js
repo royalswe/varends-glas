@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import Contact from '../components/Contact'
 
 export const IndexPageTemplate = ({
   image,
@@ -99,17 +99,9 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Senaste jobben
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Läs mer
-                    </Link>
-                  </div>
-                </div>
+
+              <Contact />
+
               </div>
             </div>
           </div>
@@ -186,6 +178,8 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
+              extension
+              publicURL
             }
             text
           }

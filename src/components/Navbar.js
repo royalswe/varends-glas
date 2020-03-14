@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import facebook from '../img/social/facebook.svg'
+import instagram from '../img/social/instagram.svg'
 import logo from '../img/logo-title.svg'
-
+//   Våra tjänster ,Om oss, Kontakt, Dokument
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -35,14 +36,14 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar"
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="värends glas logga" />
+              <img src={logo} alt="värends glas" />
             </Link>
             {/* Hamburger menu */}
             <button
@@ -75,6 +76,35 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" activeClassName={'active-page'} to="/contact/examples">
                 Form Examples
               </Link>
+
+
+
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link">
+                  More
+                </a>
+                <div className="navbar-dropdown">
+                  <a className="navbar-item">
+                    About
+                  </a>
+                  <a className="navbar-item">
+                    Jobs
+                  </a>
+                  <a className="navbar-item">
+                    Contact
+                  </a>
+                  <hr className="navbar-divider" />
+                  <a className="navbar-item">
+                    Report an issue
+                  </a>
+                </div>
+              </div>
+
+
+
+
+
+
             </div>
             <div className="navbar-end has-text-centered">
               <a
@@ -85,6 +115,16 @@ const Navbar = class extends React.Component {
               >
                 <span className="icon">
                   <img src={facebook} alt="facebook" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="https://www.instagram.com/explore/tags/v%C3%A4rendsglas/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon">
+                  <img src={instagram} alt="instagram" />
                 </span>
               </a>
             </div>

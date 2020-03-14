@@ -25,7 +25,7 @@ class BlogRoll extends React.Component {
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
                           alt: `featured image thumbnail for post ${
-                            post.title
+                            post.frontmatter.title
                           }`,
                         }}
                       />

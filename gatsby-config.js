@@ -3,6 +3,7 @@ module.exports = {
     title: 'Värends glas – Uterum | Glasmästeri | Fönster',
     description:
       'Värends glas hjälper dig med glasmästertjänster, inglasningar och fönster. Vi utgår från Alvesta och Växjö men arbetar i hela Kronobergs Län.',
+    author: "github.com/royalswe",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
