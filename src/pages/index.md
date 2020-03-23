@@ -9,7 +9,7 @@ mainpitch:
   description: >
     Värends glas är ett lokalt glasmästeri med egen tillverkning av skjut- och fasadpartier. Vi arbetar i hela Kronobergs län, gör gärna hembesök och ger förslag på vad just du behöver. Varje hus är unikt och självklart bygger vi alltid kundanpassat utan extra tillägg. 
 description: >-
-  Vi tillverkar och säljer  schücos breda kvalitetssortiment
+  Vi tillverkar och säljer schücos breda kvalitetssortiment
   Välkommen in I vårt vårt visningsrum
 intro:
   blurbs:
@@ -42,7 +42,6 @@ intro:
 main:
   blurbs:
     - image: /img/construction-workers.svg
-        alt: hehe
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
