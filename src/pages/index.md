@@ -7,10 +7,13 @@ subheading: Uterum | Glasmästeri | Fönster
 mainpitch:
   title: Varför Värends glas
   description: >
-    Värends glas är ett lokalt glasmästeri med egen tillverkning av skjut- och fasadpartier. Vi arbetar i hela Kronobergs län, gör gärna hembesök och ger förslag på vad just du behöver. Varje hus är unikt och självklart bygger vi alltid kundanpassat utan extra tillägg. 
+    Värends glas är ett lokalt glasmästeri med egen tillverkning av skjut- och
+    fasadpartier. Vi arbetar i hela Kronobergs län, gör gärna hembesök och ger
+    förslag på vad just du behöver. Varje hus är unikt och självklart bygger vi
+    alltid kundanpassat utan extra tillägg. 
 description: >-
-  Vi tillverkar och säljer schücos breda kvalitetssortiment
-  Välkommen in I vårt vårt visningsrum
+  Vi tillverkar och säljer schücos breda kvalitetssortiment Välkommen in I vårt
+  vårt visningsrum
 intro:
   blurbs:
     - image: /img/construction-workers.svg
@@ -41,7 +44,8 @@ intro:
     knowledge to anyone. This is an edit via identity...
 main:
   blurbs:
-    - image: /img/construction-workers.svg
+    - alt: Min bild
+      image: /img/construction-workers.svg
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
@@ -54,6 +58,5 @@ main:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
-
 ---
 
