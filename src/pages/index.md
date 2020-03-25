@@ -45,7 +45,29 @@ intro:
 main:
   blurbs:
     - alt: Min bild
-      image: /img/construction-workers.svg
+      image: /img/schueco_villa_munsoeterrassen_glasfasad.jpg
+      title: Våra glas är bra
+      link: about
+      text: >
+        We sell green and roasted coffee beans that are sourced directly from
+        independent farmers and farm cooperatives. We’re proud to offer a
+        variety of coffee beans grown with great care for the environment and
+        local communities. Check our post or contact us directly for current
+        availability.
+    - alt: Min fönster
+      image: /img/image_2B4.jpg
+      title: Våra glas är bra
+      link: about
+      text: >
+        We sell green and roasted coffee beans that are sourced directly from
+        independent farmers and farm cooperatives. We’re proud to offer a
+        variety of coffee beans grown with great care for the environment and
+        local communities. Check our post or contact us directly for current
+        availability.
+    - alt: Min katt
+      image: /img/schueco_villa_munsoeterrassen_glasfasad.jpg
+      title: Våra glas är bra
+      link: about
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a

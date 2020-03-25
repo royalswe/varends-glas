@@ -34,10 +34,10 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-        <section className="section">
+        <section className="section contact">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+              <h1>Kontakta oss</h1>
               <form
                 name="contact"
                 method="post"

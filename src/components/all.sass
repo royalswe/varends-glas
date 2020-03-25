@@ -12,6 +12,19 @@ $primary-invert: $vg-white
 $body-color: #333
 $black: #2b2523
 
+.services-img img
+  width: 200px
+  height: 100%
+.staggering
+  max-width: 1200px
+  margin: 0 auto
+
+  .columns
+    color: #333333
+    background-color: #EEEEEE
+  div:nth-child(even)
+    flex-direction: row-reverse
+
 .navbar .navbar-menu
   box-shadow:none !important
   
@@ -92,7 +105,10 @@ footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
 
-.navbar-item.active-page
+.footer
+  background-color: $vg-blue
+
+  .navbar-item.active-page
   color: $nav-blue
 
 .v-column
@@ -169,7 +185,21 @@ $navbar-item-img-max-height: 2.75rem
   background-color: transparent
   text-decoration: underline
 
+.feature-grid
+  color: $vg-white
+  background-color: $vg-blue
+
+footer.footer
+  background-color: $vg-blue
+
 // responsiveness
++desktop
+  .feature-grid
+    padding: 3rem 5em
+
+  .contact
+    padding: 3rem 15rem
+    
 +touch
   .navbar-item.has-dropdown
     background-color: #f7f7f7
