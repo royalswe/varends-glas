@@ -79,6 +79,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "document-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Documents, name: documents, widget: object, fields: [{ label: Document, name: document, widget: list, fields: [{ label: Image, name: image, widget: image }, { label: Title, name: title, widget: text }, { label: Description, name: description, widget: text }, { label: File, name: file, widget: file, default: /files }]}]}
+          - {label: Heading, name: heading, widget: string, required: false}
+          - {label: Description, name: description, widget: string, required: false}
+          - {label: Documents, name: documents, widget: object, fields: [{ label: Document, name: document, widget: list, fields: [{ label: Image, name: image, widget: image }, { label: Title, name: title, widget: text, required: false }, { label: Description, name: description, widget: text, required: false }, { label: File, name: file, widget: file }]}]}
