@@ -11,4 +11,3 @@ documents:
       description: Beskriver hur fönster monteras
       file: /img/hjälm.pdf
 ---
-
