@@ -152,7 +152,6 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         main={frontmatter.main}
-
       />
     </Layout>
   )
