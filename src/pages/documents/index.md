@@ -6,7 +6,7 @@ heading: Läs våra document är du snäll
 description: Här finns alla document
 documents:
   document:
-    - file: static/img/hjalm.pdf
+    - filepath: img/hjalm.pdf
       title: Ny fil
       image: /img/rasmus-diploma.jpg
       description: Beskriver hur fönster monteras
