@@ -6,7 +6,7 @@ const Documents = ({gridItems}) => {
     // gridItems.forEach(item =>{
     //     item.alt = item.name // set img alt text same as the title
     // })
-    
+    console.log(gridItems);
     return (
     <div className="columns is-multiline is-mobile">
 
