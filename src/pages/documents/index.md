@@ -6,8 +6,8 @@ heading: Läs våra document är du snäll
 description: Här finns alla document
 documents:
   document:
-    - title: te
+    - title: titel
       image: /img/rasmus-diploma.jpg
-      description: de
+      description: beskrivning
       filepath: /static/img/offert-takstolar.pdf
 ---
