@@ -10,5 +10,9 @@ documents:
       title: Ny fil
       image: /img/rasmus-diploma.jpg
       description: Beskriver hur fönster monteras
+    - filepath: /img/hjalm.pdf
+      title: d
+      image: /img/schueco_villa_munsoeterrassen_glasfasad.jpg
+      description: dd
 ---
 
