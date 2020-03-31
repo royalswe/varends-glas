@@ -101,7 +101,9 @@ export const documentsPageQuery = graphql`
           document {
             title
             description
-            filepath
+            filepath {
+              publicURL
+            }
             image {
               childImageSharp {
                 fluid(maxWidth: 640, quality: 100) {
