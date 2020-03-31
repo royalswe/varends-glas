@@ -9,5 +9,5 @@ documents:
     - title: f
       image: /img/apple-touch-icon.png
       description: g
-      filepath: /static/img/hjalma.pdf
+      filepath: /static/img/vg.pdf
 ---
