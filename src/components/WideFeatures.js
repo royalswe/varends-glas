@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 
 const WideFeatures = ({ gridItems }) => {
   return (
-    <section className="section staggering">
+    <section className="staggering">
       {gridItems.map((item, index) => (
         <div className="columns is-multiline is-gapless" key={index}>
           <div className="column is-half" style={{ MaxHeight: "15em" }}>

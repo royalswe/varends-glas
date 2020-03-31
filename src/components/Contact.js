@@ -34,7 +34,7 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-        <section className="section contact">
+        <section className="section">
           <div className="container">
             <div className="content">
               <h1>Kontakta oss</h1>
