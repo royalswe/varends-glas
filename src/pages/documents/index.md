@@ -9,5 +9,5 @@ documents:
     - title: titel
       image: /img/rasmus-diploma.jpg
       description: beskrivning
-      filepath: /img/offert-takstolar.pdf
+      file: /img/offert-takstolar.pdf
 ---

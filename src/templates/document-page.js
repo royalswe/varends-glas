@@ -101,7 +101,7 @@ export const documentsPageQuery = graphql`
           document {
             title
             description
-            filepath {
+            file {
               publicURL
             }
             image {

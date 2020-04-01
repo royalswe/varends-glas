@@ -15,7 +15,7 @@ const Documents = ({gridItems}) => {
                 <picture>
                     <PreviewCompatibleImage imageInfo={item} />
                 </picture>
-                <a href={item.filepath.publicURL}> {item.filepath.publicURL} </a>
+                <a href={item.file.publicURL}> {item.file.publicURL} </a>
             </div>
         )}
     </div>

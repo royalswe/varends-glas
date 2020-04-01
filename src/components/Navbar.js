@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import logo from '../img/logo-title.svg'
+import ServiceLinks from './ServiceLinks'
 //   Våra tjänster ,Om oss, Kontakt, Dokument
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -79,27 +80,8 @@ const Navbar = class extends React.Component {
 
 
 
-              <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">
-                  More
-                </a>
-                <div className="navbar-dropdown">
-                  <a className="navbar-item">
-                    About
-                  </a>
-                  <a className="navbar-item">
-                    Jobs
-                  </a>
-                  <a className="navbar-item">
-                    Contact
-                  </a>
-                  <hr className="navbar-divider" />
-                  <a className="navbar-item">
-                    Report an issue
-                  </a>
-                </div>
-              </div>
 
+              <ServiceLinks />
 
 
 
@@ -136,3 +118,4 @@ const Navbar = class extends React.Component {
 }
 
 export default Navbar
+
