@@ -81,4 +81,15 @@ main:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 ---
+# Kontakta oss
 
+känn dig fri att komma i kontakt med oss. Vi är alltid öppna för att diskutera nya projekt, kreativa idéer eller möjligheter att vara en del av dina visioner.
+
+Kontakta oss via formuläret eller via epost   
+📧 **info@varendsfonster.se**
+
+Känn dig fri att ringa oss   
+📞 **073-151 00 02**
+
+Besök oss  
+📫 **Ekebogatan 16, 342 30 Alvesta**
