@@ -71,22 +71,13 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" activeClassName={'active-page'} to="/blog">
                 Referenser
               </Link>
+              <ServiceLinks />
               <Link className="navbar-item" activeClassName={'active-page'} to="/contact">
                 Kontakt
               </Link>
-              <Link className="navbar-item" activeClassName={'active-page'} to="/contact/examples">
-                Form Examples
+              <Link className="navbar-item" activeClassName={'active-page'} to="/document">
+                Dokument
               </Link>
-
-
-
-
-              <ServiceLinks />
-
-
-
-
-
             </div>
             <div className="navbar-end has-text-centered">
               <a

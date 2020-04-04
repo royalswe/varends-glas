@@ -5,15 +5,18 @@ import Layout from '../components/Layout'
 import Employees from '../components/Employees'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, employees, contentComponent }) => {
-  const PageContent = contentComponent || Content
-
+export const AboutPageTemplate = ({
+  title,
+  content,
+  employees,
+  contentComponent,
+}) => {
+  const PageContent = contentComponent || Content;
   return (
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
@@ -25,17 +28,17 @@ export const AboutPageTemplate = ({ title, content, employees, contentComponent 
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-}
+};
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -46,14 +49,14 @@ const AboutPage = ({ data }) => {
         employees={post.frontmatter.employees}
       />
     </Layout>
-  )
-}
+  );
+};
 
 AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default AboutPage
+export default AboutPage;
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
@@ -78,4 +81,4 @@ export const aboutPageQuery = graphql`
       }
     }
   }
-`
+`;

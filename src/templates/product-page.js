@@ -180,6 +180,8 @@ export const productPageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
+              extension
+              publicURL
             }
             text
           }

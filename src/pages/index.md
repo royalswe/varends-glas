@@ -86,10 +86,10 @@ main:
 känn dig fri att komma i kontakt med oss. Vi är alltid öppna för att diskutera nya projekt, kreativa idéer eller möjligheter att vara en del av dina visioner.
 
 Kontakta oss via formuläret eller via epost   
-📧 **info@varendsfonster.se**
+📧 **<a href="mailto:info@varendsfonster.se">info@varendsfonster.se</a>**
 
 Känn dig fri att ringa oss   
-📞 **073-151 00 02**
+📞 **<a href="tel:+4673-151 00 02">073-151 00 02</a>**
 
 Besök oss  
 📫 **Ekebogatan 16, 342 30 Alvesta**

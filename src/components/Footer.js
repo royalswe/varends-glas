@@ -34,7 +34,7 @@ const Footer = class extends React.Component {
                     342 30 Alvesta
                     <br/>
                     <br/>
-                    Telefon: 073-151 00 02 
+                    Telefon: <a href="tel:+4673-151 00 02" style={{color: '#fff'}}>073-151 00 02</a>
                 </section> 
               </div>
               <div className="column is-4">
@@ -54,7 +54,7 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/products">
+                      <Link className="navbar-item" to="/services">
                         Våra tjänster
                       </Link>
                     </li>
@@ -64,7 +64,7 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/products">
+                      <Link className="navbar-item" to="/contact">
                         Kontakt
                       </Link>
                     </li>
