@@ -8,43 +8,25 @@ description: >-
   Värends Glas erbjuder tjänster inom glasentreprenader och glasmästeri. Vi startade i liten skala och har succesivt utvecklat vår verksamhet för att möta ökade krav och efterfrågan. Vi utför små och stora projekt för byggföretag i småland med omnejd och vi har ytterligare ett antal glastekniker knuta till vår organisation. Vid större projekt kan vi alltid erbjuda arbetsledning på plats hos dig som kund.
 intro:
   blurbs:
-    - image: /img/smal-window.jpg
+    - image: /img/image_2B4.jpg
       title: Produkter med lång livslängd
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/door.jpg
+        Söker du något beständigt och funktionellt i många år framöver har du hittat rätt med VPP System. Låt dig inspireras av bilderna på vår webbplats och kontakta oss sedan för att komma vidare.
+    - image: /img/montering.jpg
       title: Egen tillverkning & montering
-    - image: /img/door.jpg
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/smal-window.jpg
+        Med egen tillverkning säkerställer vi kvalitén i alla led på det vi
+        levererar ut på marknaden.
+        Vår långa erfarenhet av skräddarsydda partier gör att vi vet vad som fungerar.
+    - image: /img/image_2B4.jpg
+      title: Bara en tråkig titel
+    - image: /img/montering.jpg
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+        Bara en text som beskriver hur bra det kan bli
 main:
-  heading: Great coffee with no compromises
+  heading: Miljö & Energi
   description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+    Värends glas produkter är miljövänliga. glasen sänker uppvärmningskostnaderna i en byggnad genom att fungera som extra isolering framför dörrar och fönster, men också som en solfångare och extra värmekälla när luften från uterummet leds in i huset. Med rätt energianvändning spar vi på miljö och pengar.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/schueco_villa_munsoeterrassen_glasfasad.jpg
@@ -55,14 +37,13 @@ main:
     alt: Verkstad
     image: /img/home-jumbotron.jpg
 testimonials:
-  - author: Elisabeth Kaurismäki
+  - author: Elin Nilsson
     quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
+      Såå nöjd med mina Schüco❤️ Förändrar husets utseende till ett modernt slott. 
+  - author: Elin Nilsson
     quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
+      Såå nöjd med mina Schüco❤️ Förändrar husets utseende till ett modernt slott. 
+
 full_image: /img/wide-glas-door.jpg
 pricing:
   heading: Monthly subscriptions

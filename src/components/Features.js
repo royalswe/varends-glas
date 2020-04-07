@@ -3,15 +3,16 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-multiline feature-grid ">
+  <div className="columns is-multiline">
     {gridItems.map((item, index) => (
       <div key={index} className="column is-4">
         <section className="section">
           <div className="has-text-centered">
             <div
               style={{
-                width: '240px',
+                width: '10em',
                 display: 'inline-block',
+                paddingBottom: '2em'
               }}
             >
               <PreviewCompatibleImage imageInfo={item} />

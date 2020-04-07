@@ -42,7 +42,7 @@ export const AboutPageTemplate = ({
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
-          <div className="columns">
+          <div className="columns margin-bottom-3">
             <div className="column is-7 is-offset-1">
               <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
               <p>{description}</p>
@@ -51,7 +51,7 @@ export const AboutPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <WideFeatures gridItems={intro.blurbs} />
-              <div className="columns">
+              <div className="columns margin-top-3">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
@@ -176,7 +176,7 @@ export const AboutPageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 240, quality: 92) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -186,8 +186,6 @@ export const AboutPageQuery = graphql`
             title
             text
           }
-          heading
-          description
         }
         main {
           heading

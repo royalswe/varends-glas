@@ -16,32 +16,19 @@ description: >-
   vårt visningsrum
 intro:
   blurbs:
-    - image: /img/construction-workers.svg
+    - image: /img/circle-snow-flake.png
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/cat-window.svg
+        Dubbelglassystem som ger dig möjlighet att njuta av ditt uterum en lång bit in på hösten. Här hittar du våra glaspartier och uterum, Basic och Design
+    - image: /img/circle-sun.png
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/door.svg
+        Enkelglassystem som ger dig möjlighet att njuta av ditt uterum en lång bit in på hösten. Här hittar du våra glaspartier och Dörrar, Basic och Design
+    - image: /img/circle-weather.png
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-  heading: What we offer
+        Trippelglassystem som ger dig möjlighet att njuta av ditt uterum en lång bit in på hösten. Här hittar du våra glaspartier och uterum fönster, Basic och Design
+  heading: Glas för alla säsonger
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    Sommar, höst vinter eller vår? Vi har det som krävs.
+    Ett bra uterum ska vara anpassat efter dina behov och din livssituation. Därför är det viktigt att du funderar igenom hur du vill använda ditt uterum innan du börjar bygga det – det är nämligen nyckeln till hur du ska utforma det.
 main:
   blurbs:
     - alt: Min bild
@@ -74,12 +61,6 @@ main:
         variety of coffee beans grown with great care for the environment and
         local communities. Check our post or contact us directly for current
         availability.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
 ---
 # Kontakta oss
 

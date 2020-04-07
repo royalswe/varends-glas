@@ -105,7 +105,9 @@ export const IndexPageTemplate = ({
                       <p>{description}</p>
                     </div>
                   </div>
-                  <div className="full-width-container">
+                  <div className="full-width-container has-text-centered feature-grid">
+                    <h3>{intro.heading}</h3>
+                    <p>{intro.description}</p>
                     <Features gridItems={intro.blurbs} />
                   </div>
                 </div>
@@ -236,8 +238,6 @@ export const pageQuery = graphql`
             text
             link
           }
-          heading
-          description
         }
       }
     }
