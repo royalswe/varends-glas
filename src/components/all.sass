@@ -21,9 +21,23 @@ $black: #2b2523
 
   .columns
     color: #333333
-    background-color: #EEEEEE
+
+  .decorative-rotated::before
+    width: 24em;
+    height: 10em;
+    background-color: #f6f6f6;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    margin-top: 4%;
+
   div:nth-child(even)
     flex-direction: row-reverse
+    .decorative-rotated::before
+      left: 18%;
+      transform: rotate(20deg);
+
+
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -182,10 +196,20 @@ $navbar-item-img-max-height: 2.75rem
   flex-basis: 35%
   margin: 0 1.5em 0 0
 
-
 @import "~bulma"
 
-
+// .navbar-dropdown::before
+//   display: block;
+//   content: "";
+//   position: absolute;
+//   top: -5px;
+//   left: 50%;
+//   margin-left: -3px;
+//   border-left: 5px solid transparent;
+//   border-right: 5px solid transparent;
+//   border-bottom: 5px solid #222;
+//   width: 0;
+//   height: 0;
 
 .navbar-dropdown a.navbar-item:hover
   color: $nav-blue
@@ -203,6 +227,19 @@ footer.footer
 +desktop
   .feature-grid
     padding: 3rem 5em
+
++tablet
+  // contact
+  .contact-spacing
+    padding-right: 5em 
+  // .triangle-element
+  //   position: absolute;
+  //   top: 0;
+  //   width: 56%;
+  //   height: 0;
+  //   border-bottom: 463px solid $vg-blue;
+  //   border-right: 160px solid transparent;
+  //   z-index: -1;
 
 +touch
   .navbar-item.has-dropdown

@@ -31,7 +31,7 @@ export const IndexPageTemplate = ({
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
           })`,
           backgroundPosition: `top left`,
-          backgroundAttachment: `fixed`
+          backgroundAttachment: `fixed`,
         }}
       >
         <div
@@ -41,7 +41,7 @@ export const IndexPageTemplate = ({
             lineHeight: "1",
             justifyContent: "space-around",
             alignItems: "left",
-            flexDirection: "column"
+            flexDirection: "column",
           }}
         >
           <h1
@@ -50,7 +50,7 @@ export const IndexPageTemplate = ({
               backgroundColor: "rgba(0, 0, 0, 0.5)",
               color: "white",
               lineHeight: "1",
-              padding: "0.25em"
+              padding: "0.25em",
             }}
           >
             {title}
@@ -62,7 +62,7 @@ export const IndexPageTemplate = ({
               color: "white",
               lineHeight: "1",
               padding: "0.25em",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             {subheading}
@@ -75,7 +75,7 @@ export const IndexPageTemplate = ({
               borderColor: "#28a745",
               alignSelf: "center",
               padding: "25px",
-              marginTop: "25px"
+              marginTop: "25px",
             }}
             to="/contact"
           >
@@ -108,26 +108,29 @@ export const IndexPageTemplate = ({
                   <div className="full-width-container">
                     <Features gridItems={intro.blurbs} />
                   </div>
-
-                  <WideFeatures gridItems={main.blurbs} />
-
-                  <div className="columns" style={{ padding: "5em" }}>
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/products">
-                        Se våra produkter
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="columns">
-                    <div className="column is-6">
-                      <PostContent content={content} />
-                    </div>
-                    <div className="column is-6">
-                      <Contact />
-                    </div>
-                  </div>
                 </div>
               </div>
+            </div>
+            <div className="content">
+            <WideFeatures gridItems={main.blurbs} />
+
+            <div className="columns" style={{ padding: "5em" }}>
+              <div className="column is-12 has-text-centered">
+                <Link className="btn" to="/services">
+                  Se våra tjänster
+                </Link>
+              </div>
+            </div>
+           
+            <div className="columns">
+              <div className="column is-6">
+                <PostContent content={content} />
+              </div>
+              <div className="column is-6">
+                <Contact />
+              </div>
+            </div>
+            
             </div>
           </div>
         </div>

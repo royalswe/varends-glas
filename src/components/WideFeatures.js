@@ -14,15 +14,17 @@ const WideFeatures = ({ gridItems }) => {
               <PreviewCompatibleImage imageInfo={item} />
             </picture>
           </div>
-          <div className="column is-half">
+          <div className="column is-half decorative-rotated">
             <div style={{padding: "1em"}}>
               <h3 style={{fontWeight: "bold", fontSize: "1.1em"}}>{item.title}</h3>
               <br />
               <p>{item.text}</p>
               <br />
-              <Link className="button" to={item.link}>
-                    Läs mer →
-              </Link>
+              {item.link &&
+                <Link className="button" to={item.link}>
+                      Läs mer →
+                </Link>
+              }
             </div>
           </div>
         </div>
