@@ -9,8 +9,6 @@ import Contact from "../components/Contact";
 import Content, { HTMLContent } from "../components/Content";
 
 export const IndexPageTemplate = ({
-  content,
-  contentComponent,
   image,
   title,
   heading,
@@ -18,7 +16,9 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
-  main
+  main,
+  content,
+  contentComponent
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -161,8 +161,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        content={data.markdownRemark.html}
-        contentComponent={HTMLContent}
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -171,6 +169,8 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         main={frontmatter.main}
+        content={data.markdownRemark.html}
+        contentComponent={HTMLContent}
       />
     </Layout>
   );
