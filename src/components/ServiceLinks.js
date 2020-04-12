@@ -6,10 +6,10 @@ const ServiceLinks = ({ data }) => {
   const links = data.allMarkdownRemark.edges
   return(
     <div className="navbar-item has-dropdown is-hoverable">
-      <Link className="navbar-link" to="/services">Våra tjänster</Link>
+      <Link className="navbar-link" activeClassName={'active-page'} to="/services">Våra tjänster</Link>
       <div className="navbar-dropdown">
         {links && links.map(({ node: link }) => (         
-          <Link className="navbar-item" key={link.id} to={link.fields.slug}>
+          <Link className="navbar-dropdown-item" activeClassName={'active-page'} key={link.id} to={link.fields.slug}>
             {link.frontmatter.title}
           </Link>
         ))}

@@ -10,12 +10,11 @@ const Navbar = class extends React.Component {
     super(props)
     this.state = {
       active: false,
-      navBarActiveClass: '',
+      navBarActiveClass: ''
     }
   }
 
   toggleHamburger = () => {
-    // toggle the active boolean in the state
     this.setState(
       {
         active: !this.state.active,
@@ -28,11 +27,21 @@ const Navbar = class extends React.Component {
               navBarActiveClass: 'is-active',
             })
           : this.setState({
-              navBarActiveClass: '',
+              navBarActiveClass: 'is-disabled',
             })
       }
     )
   }
+
+componentDidMount() {
+  window.addEventListener('resize', () => {
+    if(window.innerWidth >= 1024){
+      this.setState({
+        navBarActiveClass: '', active: false
+      });
+    }
+  }, false);
+}
 
   render() {
     return (
@@ -61,11 +70,10 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="navbar-start">
               <Link className="navbar-item" activeClassName={'active-page'} to="/about">
                 Om oss
               </Link>
-              <ServiceLinks />
               <Link className="navbar-item" activeClassName={'active-page'} to="/blog">
                 Referenser
               </Link>
@@ -75,6 +83,7 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" activeClassName={'active-page'} to="/documents">
                 Manualer
               </Link>
+              <ServiceLinks />
             </div>
             <div className="navbar-end has-text-centered">
               <a

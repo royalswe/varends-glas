@@ -1,7 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-// vg logo brand color: #FD461E
 $vg-red: #d62632
 $vg-blue: #282946
 $vg-white: #ffffff
@@ -11,14 +10,6 @@ $primary: $vg-red
 $primary-invert: $vg-white
 $body-color: #333
 $black: #2b2523
-
-.navbar .navbar-menu
-  box-shadow:none !important
-  
-.navbar-burger
-  border-style: none
-  outline: none
-  background-color: transparent
 
 .content .taglist
   list-style: none
@@ -92,66 +83,29 @@ $black: #2b2523
 .margin-bottom-3
   margin-bottom: 3em !important
 
-.navbar-item .icon
-  color: $primary
-// Override for use of svg's from https://simpleicons.org/
-.icon svg
-  width: 1.5rem
-  height: 1.5rem
-  fill: currentColor
-.navbar-brand .navbar-item.logo
-  padding: 0 1rem
 footer.footer
-  padding: 3rem 0rem 0rem
-  background-color: transparent
-
-.footer
   background-color: $vg-blue
-
-  .navbar-item.active-page
-  color: $nav-blue
-
-.v-column
-  padding: 1rem
-  text-align: left
-
-.services-img img
-  width: 200px
-  height: 100%
-.staggering
-  max-width: 1200px
-  margin: 0 auto
-
-  .columns
-    color: #333333
-
-  .decorative-rotated::before
-    width: 24em;
-    height: 10em;
-    background-color: #f6f6f6;
-    position: absolute;
-    content: "";
-    z-index: -1;
-    margin-top: 4%;
-
-  div:nth-child(even)
-    flex-direction: row-reverse
-    .decorative-rotated::before
-      left: 18%;
-      transform: rotate(20deg);
-
+  padding: 0
+  h3, a
+    color: $vg-white
+  .is-4 section
+    padding: 1rem
+    text-align: left
+    
+  a.navbar-item:hover
+    text-decoration: underline
 
 //Menu overrides
 $menu-item-color: $white-ter
-$menu-item-hover-color: $black
+$menu-item-hover-color: none
 $menu-item-hover-background-color: none
 $menu-item-active-color: $vg-white
 $menu-item-active-background-color:	$vg-white
 $menu-list-border-left: 1px solid $vg-white
 $menu-label-color: $white-ter
-$navbar-item-hover-color: $nav-blue
+$navbar-item-hover-color: none
 $navbar-item-hover-background-color: none
-$navbar-dropdown-arrow: $nav-blue
+//$navbar-dropdown-arrow: $nav-blue
 $navbar-dropdown-border-top: none
 //$navbar-tab-hover-border-bottom-color: red
 //$navbar-dropdown-item-active-background-color: red
@@ -160,18 +114,37 @@ $navbar-dropdown-border-top: none
 $navbar-height: 5rem
 $navbar-item-img-max-height: 2.75rem
 
+.navbar .navbar-menu
+  box-shadow:none !important
+  
+.navbar-burger
+  border-style: none
+  outline: none
+  background-color: transparent
+
 .navbar-start
   flex-wrap: wrap
-  align-content: center
+  align-self: center
+  margin-right: auto
+  a
+    position: relative
+    align-self: flex-start
+    color: #363636
+    text-decoration: none
 
-//.navbar-start a
-  // &.active-page
-  //   border-bottom: 3px solid $nav-blue
+.navbar-dropdown 
+  padding: 1em
 
-
-.v-column a.navbar-item:hover
-  color: #f5f5f5 !important
-  text-decoration: underline
+.navbar-item .icon
+  color: $primary
+// Override for use of svg's from https://simpleicons.org/
+.icon svg
+  width: 1.5rem
+  height: 1.5rem
+  fill: currentColor
+  
+.navbar-brand .navbar-item.logo
+  padding: 0 1rem
 
 .menu-label
   font-size: 1em !important
@@ -201,25 +174,33 @@ $navbar-item-img-max-height: 2.75rem
   flex-basis: 35%
   margin: 0 1.5em 0 0
 
+// Featured columns
+.services-img img
+  width: 200px
+  height: 100%
+.staggering
+  max-width: 1200px
+  margin: 0 auto
+
+  .columns
+    color: #333333
+
+  .decorative-rotated::before
+    width: 24em
+    height: 10em
+    background-color: #f6f6f6
+    position: absolute
+    content: ""
+    z-index: -1
+    margin-top: 4%
+
+  div:nth-child(even)
+    flex-direction: row-reverse
+    .decorative-rotated::before
+      left: 18%
+      transform: rotate(20deg)
+
 @import "~bulma"
-
-// .navbar-dropdown::before
-//   display: block;
-//   content: "";
-//   position: absolute;
-//   top: -5px;
-//   left: 50%;
-//   margin-left: -3px;
-//   border-left: 5px solid transparent;
-//   border-right: 5px solid transparent;
-//   border-bottom: 5px solid #222;
-//   width: 0;
-//   height: 0;
-
-.navbar-dropdown a.navbar-item:hover
-  color: $nav-blue
-  background-color: transparent
-  text-decoration: underline
 
 .feature-grid
   color: $vg-white
@@ -228,43 +209,98 @@ $navbar-item-img-max-height: 2.75rem
   padding: 2em
   h3
     color: $vg-white
-footer.footer
-  background-color: $vg-blue
-
 // responsiveness
 +desktop
   .feature-grid
     padding: 3rem 5em
+  
+  .navbar-start
+    a:before
+      content: ""
+      position: absolute
+      height: 2px
+      bottom: 0
+      left: 13px
+      right: 13px
+      background-color: $vg-blue
+      visibility: hidden
+      -webkit-transform: scaleX(0)
+      transform: scaleX(0)
+      -webkit-transition: all 0.2s ease-in-out 0s
+      transition: all 0.2s ease-in-out 0s
+
+    .navbar-dropdown-item:before
+      right: 0
+      left: 0
+
+    a.active-page:before,
+    a:hover:before,
+    a:focus:before
+      visibility: visible
+      -webkit-transform: scaleX(1)
+      transform: scaleX(1)
 
 +tablet
   // contact
   .contact-spacing
     padding-right: 5em 
   // .triangle-element
-  //   position: absolute;
-  //   top: 0;
-  //   width: 56%;
-  //   height: 0;
-  //   border-bottom: 463px solid $vg-blue;
-  //   border-right: 160px solid transparent;
-  //   z-index: -1;
+  //   position: absolute
+  //   top: 0
+  //   width: 56%
+  //   height: 0
+  //   border-bottom: 463px solid $vg-blue
+  //   border-right: 160px solid transparent
+  //   z-index: -1
 
 +touch
   .navbar-item.has-dropdown
     background-color: #f7f7f7
   .navbar-link:not(.is-arrowless)
     padding-right: 1em
+  .navbar-menu
+    display: block
+    position: absolute
+    left: 0
+    right: 0
+    transform-origin: top
+    transform: scale(1, 0)
+    &.is-disabled
+      transition: transform 350ms ease-in-out
+      a
+        opacity: 0
+        transition: opacity 180ms ease-in-out
+    &.is-active
+      transition: transform 400ms ease-in-out
+      transform: scale(1, 1)
+      a
+        opacity: 1
+        transition: opacity 950ms ease-in-out
+    .navbar-item.has-dropdown
+      background-color: $vg-white
+    a.navbar-dropdown-item
+      color: $black
+    a.active-page,
+    a:hover,
+    a:focus
+      background-color: #f7f7f7
+    a.navbar-dropdown-item
+      display: flex
+      padding-left: 2em
+    .navbar-link:not(.is-arrowless)::after
+      left: 10em
 
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%
 
 +mobile
-  .blog-list-item header
-    display: block
-  .blog-list-item .featured-thumbnail
-    text-align: center
-    max-width: 70%
-    margin: 0 0 1em
+  .blog-list-item 
+    header
+      display: block
+    .featured-thumbnail
+      text-align: center
+      max-width: 70%
+      margin: 0 0 1em
 
  
