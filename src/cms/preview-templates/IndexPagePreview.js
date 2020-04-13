@@ -16,7 +16,7 @@ const IndexPagePreview = ({ entry, widgetFor }) => {
         intro={data.intro || { blurbs: [] }}
         mainpitch={data.mainpitch || {}}
         main={data.main || { blurbs: [] }}
-        contact={data.contact}
+        content={widgetFor('body')}
       />
     )
   } else {
