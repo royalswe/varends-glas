@@ -39,40 +39,44 @@ export const IndexPageTemplate = ({
             display: "flex",
             height: "200px",
             lineHeight: "1",
+            textAlign: "center",
             justifyContent: "space-around",
             alignItems: "left",
             flexDirection: "column",
           }}
         >
           <h1
-            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen animate fade-in"
             style={{
               backgroundColor: "rgba(0, 0, 0, 0.5)",
-              color: "white",
+              color: "#fff",
               lineHeight: "1",
               padding: "0.25em",
+              letterSpacing: "2px",
             }}
           >
             {title}
           </h1>
           <h3
-            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen animate fade-in"
             style={{
               backgroundColor: "rgba(0, 0, 0, 0.5)",
-              color: "white",
+              color: "#fff",
               lineHeight: "1",
               padding: "0.25em",
               textAlign: "center",
+              letterSpacing: "2px",
             }}
           >
             {subheading}
           </h3>
           <Link
-            className="button is-outlined is-large"
+            className="button is-outlined is-large animate fade-in-up"
             style={{
-              color: "#fff",
-              backgroundColor: "#28a745",
-              borderColor: "#28a745",
+              color: "#696969",
+              backgroundColor: "#fff",
+              borderColor: "#696969",
+              borderWidth: "3px",
               alignSelf: "center",
               padding: "25px",
               marginTop: "25px",

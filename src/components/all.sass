@@ -127,6 +127,7 @@ $navbar-item-img-max-height: 2.75rem
   align-self: center
   margin-right: auto
   a
+    display: flex
     position: relative
     align-self: flex-start
     color: #363636
@@ -134,6 +135,8 @@ $navbar-item-img-max-height: 2.75rem
 
 .navbar-dropdown 
   padding: 1em
+  a
+    padding: 0.8em
 
 .navbar-item .icon
   color: $primary
@@ -202,6 +205,36 @@ $navbar-item-img-max-height: 2.75rem
 
 @import "~bulma"
 
+// animations
+.animate
+  animation-duration: 1s
+  animation-fill-mode: both
+  animation-delay: 0.4s
+
+@keyframes fadeInUp
+  from
+    opacity: 0
+    transform: translate(0, 100%)
+  to
+    opacity: 1
+    transform: none
+
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.fade-in
+  animation-name: fadeIn
+   
+.fade-in-up
+  animation-name: fadeInUp
+  &.button
+    animation-delay: 1s
+
+// animations end
+
 .feature-grid
   color: $vg-white
   background-color: $vg-blue
@@ -209,6 +242,7 @@ $navbar-item-img-max-height: 2.75rem
   padding: 2em
   h3
     color: $vg-white
+
 // responsiveness
 +desktop
   .feature-grid

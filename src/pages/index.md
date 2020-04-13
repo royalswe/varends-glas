@@ -3,7 +3,7 @@ templateKey: index-page
 title: Glasmästeriet i Kronoberg
 image: /img/home-jumbotron.jpg
 heading: SCHÜCO
-subheading: Uterum | Glasmästeri | Fönster
+subheading: Vi hjälper dig med fönster & glaspartier av högsta kvalitet
 mainpitch:
   title: Varför Värends glas
   description: >
