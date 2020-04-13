@@ -18,53 +18,61 @@ export const ContactPageTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-  <div className="content">
-  <div
-    className="full-width-image-container margin-top-0"
-    style={{
-      backgroundImage: `url(${
-        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-      })`,
-    }}
-  >
-    <h2
-      className="has-text-weight-bold is-size-1"
-      style={{
-        boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-        backgroundColor: '#f40',
-        color: 'white',
-        padding: '1rem',
-      }}
-    >
-      {title}
-    </h2>
-  </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {heading}
+      <div className="content">
+          <div
+              className="full-width-image-container margin-top-0"
+              style={{
+                  backgroundImage: `url(${
+                      !!image.childImageSharp
+                          ? image.childImageSharp.fluid.src
+                          : image
+                  })`,
+                  marginBottom: "0"
+              }}
+          >
+              <h2
+                  className="has-text-weight-bold is-size-1"
+                  style={{
+                      boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
+                      backgroundColor: "#f40",
+                      color: "white",
+                      padding: "1rem"
+                  }}
+              >
+                  {title}
               </h2>
-              <p>{description}</p>
-              <div className="columns">
-                <div className="column is-6">
-                  <PostContent content={content} />
-                </div>
-                <div className="column is-6">
-                  <Contact />
-                </div>
-              </div>
-              <Employees gridItems={employees.employee} />
-            </div>
           </div>
-        </div>
+          <section
+              className="section"
+              style={{
+                  paddingTop: "4em",
+                  paddingBottom: "3em"
+              }}
+          >
+              <div className="container">
+                  <h1 className="title" style={{ }}>
+                      {heading}
+                  </h1>
+                  <h6 className="subtitle" style={{ }}>
+                      {description}
+                  </h6>
+              </div>
+          </section>
+          <section className="section"  style={{ backgroundColor: "#EFF0F4" }}>
+              <div className="columns">
+                  <div className="column is-6">
+                      <PostContent content={content} />
+                  </div>
+                  <div className="column is-6">
+                      <Contact />
+                  </div>
+              </div>
+          </section>
+          <section className="section">
+            <Employees gridItems={employees.employee} />
+          </section>
       </div>
-    </section>
-    </div>
-  )
+  );
 }
 
 ContactPageTemplate.propTypes = {
@@ -127,6 +135,7 @@ export const documentsPageQuery = graphql`
             name
             phone
             email
+            title
             image {
               childImageSharp {
                 fluid(maxWidth: 640, quality: 64) {

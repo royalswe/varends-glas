@@ -7,10 +7,12 @@ description: Här finns alla kontakt uppgifter
 employees:
   employee:
     - email: rille@gmail.com
+      title: VD
       image: /img/rasmus-diploma.jpg
       name: Rasmus Karlsson
       phone: 070xxxxxx
     - email: rille@gmail.com
+      title: Operatör
       image: /img/rasmus-diploma.jpg
       name: Rasmus Karlssons tvilling
       phone: 073xxxxxx

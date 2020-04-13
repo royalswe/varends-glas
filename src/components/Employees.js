@@ -17,6 +17,7 @@ const Employees = ({gridItems}) => {
                 </picture>
                 <ul>
                     <li>{item.name}</li>
+                    <li>{item.title}</li>
                     <li>{item.phone}</li>
                     <li>{item.email}</li>
                 </ul>
