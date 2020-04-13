@@ -50,7 +50,7 @@ collections:
           - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Main, name: main, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields:  [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}, {label: Title, name: title, widget: text}, {label: Text, name: text, widget: text}, {label: Link, name: link, widget: text}]}]}
-          - {label: Contact Body, name: contact-body, widget: markdown}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: src/pages/about/index.md
         label: About Page
         name: about
@@ -76,7 +76,7 @@ collections:
           - {label: Description, name: description, widget: string, required: false}
           - {label: Documents, name: documents, widget: object, fields: [{ label: Document, name: document, widget: list, required: false, fields: [{ label: Image, name: image, widget: image }, { label: Title, name: title, widget: text, required: false }, { label: Description, name: description, widget: text, required: false }, { label: Upload File, name: file, widget: file, public_folder: '/static/img' }]}]}
       - file: src/pages/contact/index.md
-        label: Contact
+        label: Contact Page
         name: contact
         fields:
           - {label: Template Key, name: templateKey, widget: hidden, default: contact-page}
@@ -84,5 +84,5 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string, required: false}
           - {label: Description, name: description, widget: string, required: false}
-          - {label: Contact Body, name: contact-body, widget: markdown}
+          - {label: "Body", name: "body", widget: "markdown"}
           - {label: Employees, name: employees, widget: object, fields: [{ label: Heading, name: heading, widget: string, required: false }, { label: Description, name: description, widget: text, required: false }, { label: Employee, name: employee, widget: list, fields: [{ label: Image, name: image, widget: image }, { label: Name, name: name, widget: text }, { label: Phone, name: phone, widget: text }, { label: Email, name: email, widget: text }]}]}

@@ -7,6 +7,7 @@ import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ServicePreview from './preview-templates/ServicePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 import DocumentPreview from './preview-templates/DocumentPreview'
+import ContactPagePreview from './preview-templates/ContactPagePreview'
 
 // CMS.registerMediaLibrary(uploadcare);
 // CMS.registerMediaLibrary(cloudinary);
@@ -16,3 +17,4 @@ CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 CMS.registerPreviewTemplate('services', ServicePreview)
 CMS.registerPreviewTemplate('documents', DocumentPreview)
+CMS.registerPreviewTemplate('contact', ContactPagePreview)
