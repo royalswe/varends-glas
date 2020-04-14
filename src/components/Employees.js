@@ -12,7 +12,7 @@ const Employees = ({gridItems}) => {
 
         {gridItems.map((item, index) =>
             <div className="employee-card" key={index}>
-                <picture className="employee-image">
+                <picture>
                     <PreviewCompatibleImage imageInfo={item} />
                 </picture>
                 <ul>

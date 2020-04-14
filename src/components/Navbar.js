@@ -34,15 +34,15 @@ const Navbar = class extends React.Component {
   }
 
   // Temporary remove, prevent navbar glitch when rezise window
-  componentDidMount(){
-    window.addEventListener('resize', () => {
-      if(window.innerWidth >= 1024){
-        this.setState({
-          navBarActiveClass: '', active: false
-        });
-      }
-    }, false);
-  }
+  // componentDidMount(){
+  //   window.addEventListener('resize', () => {
+  //     if(window.innerWidth >= 1024){
+  //       this.setState({
+  //         navBarActiveClass: '', active: false
+  //       });
+  //     }
+  //   }, false);
+  // }
 
   render() {
     return (

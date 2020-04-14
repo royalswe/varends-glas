@@ -43,11 +43,6 @@ employees:
       title: Operatör     
       phone: "070-000000"
       email: rille@gmail.com
-    - image: /img/no-picture.png
-      name: Förnamn Efternamn
-      title: Operatör     
-      phone: "070-000000"
-      email: rille@gmail.com
 ---
 # Kontakta oss
 
