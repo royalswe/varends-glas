@@ -38,7 +38,7 @@ export const DocumentPageTemplate = ({
  
         }}
       >
-        <div className="column is-one-third is-offset-1">
+        <div className="column is-6 is-offset-1">
           <h1 className="title" style={{}}>
             {heading}
           </h1>
