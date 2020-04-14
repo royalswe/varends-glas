@@ -128,6 +128,7 @@ footer.footer
   a.navbar-item:hover
     text-decoration: underline
 
+// Navbar
 //Menu overrides
 $menu-item-color: $white-ter
 $menu-item-hover-color: none
@@ -236,6 +237,16 @@ $navbar-item-img-max-height: 2.75rem
       left: 18%
       transform: rotate(20deg)
 
+// contact page
+.contact-section
+  background-color: $vg-blue
+  color: #ffffff
+  a,
+  a:hover
+    color: #ffffff
+  .column h1, label
+    color: #ffffff 
+
 @import "~bulma"
 
 // animations
@@ -267,6 +278,29 @@ $navbar-item-img-max-height: 2.75rem
     animation-delay: 1s
 
 // animations end
+
+.employees
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  ul
+    list-style: none
+    margin-left: 0
+  .employee-card
+    width: 20em
+    padding: 1em
+  .employee-name
+    color: #363636
+    font-size: 1rem
+    font-weight: 600
+    line-height: 1.125
+  .employee-title
+    font-weight: 800
+  a
+    color: #ff7f00
+    font-weight: 600
+    
+
 
 .feature-grid
   color: $vg-white
@@ -369,5 +403,3 @@ $navbar-item-img-max-height: 2.75rem
       text-align: center
       max-width: 70%
       margin: 0 0 1em
-
- 

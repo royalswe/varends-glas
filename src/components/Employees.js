@@ -8,18 +8,18 @@ const Employees = ({gridItems}) => {
     })
     
     return (
-    <div className="columns is-multiline is-mobile">
+    <div className="employees">
 
         {gridItems.map((item, index) =>
-            <div className="column is-6" style={{}} key={index}>
-                <picture>
+            <div className="employee-card" key={index}>
+                <picture className="employee-image">
                     <PreviewCompatibleImage imageInfo={item} />
                 </picture>
                 <ul>
-                    <li>{item.name}</li>
-                    <li>{item.title}</li>
-                    <li>{item.phone}</li>
-                    <li>{item.email}</li>
+                    <li className="employee-name">{item.name}</li>
+                    <li className="employee-title">{item.title}</li>
+                    <li><a href={`tel:${item.phone}`}>{item.phone}</a></li>
+                    <li><a href={`mailto:${item.email}`}>{item.email}</a></li>
                 </ul>
             </div>
         )}

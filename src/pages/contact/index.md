@@ -2,24 +2,52 @@
 templateKey: contact-page
 title: Kontakt
 image: /img/home-jumbotron.jpg
-heading: Kontakta oss är du snäll
-description: Här finns alla kontakt uppgifter
+heading: Kontakta oss gärna med dina frågor
+description: >
+  Kontakta oss när du är intresserad av en genomtänkt lösning för ditt projekt. 
+  Maila eller ring oss för mer information eller besök oss för att se vårt sortiment.
 employees:
   employee:
-    - email: rille@gmail.com
-      title: VD
-      image: /img/rasmus-diploma.jpg
-      name: Rasmus Karlsson
-      phone: 070xxxxxx
-    - email: rille@gmail.com
-      title: Operatör
-      image: /img/rasmus-diploma.jpg
-      name: Rasmus Karlssons tvilling
-      phone: 073xxxxxx
-    - email: rille@gmail.com
-      image: /img/rasmus-diploma.jpg
-      name: Rasmus Karlsson
-      phone: 070xxxxxx
+    - image: /img/no-picture.png
+      name: Förnamn Efternamn
+      title: Kontorsansvarig     
+      phone: "070-000000"
+      email: rille@gmail.com
+    - image: /img/no-picture.png
+      name: Förnamn Efternamn
+      title: Säljare     
+      phone: "070-000000"
+      email: rille@gmail.com
+    - image: /img/no-picture.png
+      name: Förnamn Efternamn
+      title: Operatör     
+      phone: "070-000000"
+      email: rille@gmail.com
+    - image: /img/no-picture.png
+      name: Förnamn Efternamn
+      title: Operatör     
+      phone: "070-000000"
+      email: rille@gmail.com
+    - image: /img/no-picture.png
+      name: Förnamn Efternamn
+      title: Operatör     
+      phone: "070-000000"
+      email: rille@gmail.com
+    - image: /img/no-picture.png
+      name: Förnamn Efternamn
+      title: Operatör     
+      phone: "070-000000"
+      email: rille@gmail.com
+    - image: /img/no-picture.png
+      name: Förnamn Efternamn
+      title: Operatör     
+      phone: "070-000000"
+      email: rille@gmail.com
+    - image: /img/no-picture.png
+      name: Förnamn Efternamn
+      title: Operatör     
+      phone: "070-000000"
+      email: rille@gmail.com
 ---
 # Kontakta oss
 
