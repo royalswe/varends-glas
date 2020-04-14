@@ -11,7 +11,7 @@ export const DocumentPageTemplate = ({
   image,
   documents
 }) => (
-  <div className="content">
+  <div className="content" style={{backgroundColor:"#f5f5f5"}}>
   <div
     className="full-width-image-container margin-top-0"
     style={{
@@ -32,16 +32,27 @@ export const DocumentPageTemplate = ({
       {title}
     </h2>
   </div>
+  <section
+        className="section"
+        style={{
+ 
+        }}
+      >
+        <div className="column is-one-third is-offset-1">
+          <h1 className="title" style={{}}>
+            {heading}
+          </h1>
+          <h6 className="subtitle" style={{}}>
+            {description}
+          </h6>
+        </div>
+      </section>
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
 
             <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {heading}
-              </h2>
-              <p>{description}</p>
               <Documents gridItems={documents.document} />
             </div>
           </div>

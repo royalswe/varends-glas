@@ -12,6 +12,14 @@ const Navbar = class extends React.Component {
       active: false,
       navBarActiveClass: ''
     }
+
+    window.addEventListener('resize', () => {
+      if(window.innerWidth >= 1024){
+        this.setState({
+          navBarActiveClass: '', active: false
+        });
+      }
+    }, false);
   }
 
   toggleHamburger = () => {
@@ -32,16 +40,6 @@ const Navbar = class extends React.Component {
       }
     )
   }
-
-componentDidMount() {
-  window.addEventListener('resize', () => {
-    if(window.innerWidth >= 1024){
-      this.setState({
-        navBarActiveClass: '', active: false
-      });
-    }
-  }, false);
-}
 
   render() {
     return (

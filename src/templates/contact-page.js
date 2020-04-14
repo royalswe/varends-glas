@@ -40,23 +40,17 @@ export const ContactPageTemplate = ({
           {title}
         </h2>
       </div>
-      <section
-        className="section"
-        style={{
-          paddingTop: "4em",
-          paddingBottom: "3em",
-        }}
-      >
-        <div className="container column is-7 is-offset-1">
-          <h1 className="title" style={{}}>
+      <section className="section">
+        <div className="column is-one-third is-offset-1">
+          <h1 className="title">
             {heading}
           </h1>
-          <h6 className="subtitle" style={{}}>
+          <h6 className="subtitle">
             {description}
           </h6>
         </div>
       </section>
-      <section className="section  contact-section">
+      <section className="section contact-section">
         <div className="section columns">
           <div className="column is-6">
             <PostContent content={content} />
@@ -66,7 +60,12 @@ export const ContactPageTemplate = ({
           </div>
         </div>
       </section>
-      <div dangerouslySetInnerHTML={map()}></div>
+
+      <iframe 
+        title="maps" 
+        src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d8713.689714834336!2d14.5588655!3d56.9072883!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4659fa8cdb3e60d3%3A0x4e553492247cf5a9!2sV%C3%A4rends%20Glas%2C%20Ekebogatan%2016%2C%20342%2030%20Alvesta!3m2!1d56.9072883!2d14.5588655!5e0!3m2!1ssv!2sse!4v1586873755829!5m2!1ssv!2sse"
+        width="100%" height="450" frameBorder="0" style={{border:"0"}} allowFullScreen="" aria-hidden="false">
+      </iframe>
       <section className="section">
         <Employees gridItems={employees.employee} />
       </section>
@@ -74,9 +73,6 @@ export const ContactPageTemplate = ({
   );
 };
 
-function map(){
-  return{ __html: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2178.422429829637!2d14.556671451487668!3d56.907288280784066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4659fa8cdb3e60d3%3A0x4e553492247cf5a9!2sV%C3%A4rends%20Glas!5e0!3m2!1ssv!2sse!4v1586805556768!5m2!1ssv!2sse" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="true" tabindex="0"></iframe>' }
-}
 
 ContactPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
