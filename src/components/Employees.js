@@ -9,7 +9,6 @@ const Employees = ({gridItems}) => {
     
     return (
     <div className="employees">
-
         {gridItems.map((item, index) =>
             <div className="employee-card" key={index}>
                 <picture>

@@ -122,7 +122,7 @@ export const documentsPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 1024, quality: 64) {
+            fluid(maxWidth: 1400, quality: 64) {
               ...GatsbyImageSharpFluid
             }
           }

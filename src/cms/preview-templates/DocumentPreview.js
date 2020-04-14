@@ -4,8 +4,8 @@ import { DocumentPageTemplate } from '../../templates/document-page'
 
 const DocumentPagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS()
-  const entryImages = entry.getIn(['data', 'documents', 'document', 'image'])
-  const Images = entryImages ? entryImages.toJS() : []
+  const entryDocuments = entry.getIn(['data', 'documents', 'document'])
+  const document = entryDocuments ? entryDocuments.toJS() : []
 
   return (
     <DocumentPageTemplate
@@ -13,11 +13,7 @@ const DocumentPagePreview = ({ entry }) => {
       description={data.description}
       heading={data.heading}
       image={data.image}
-      documents={{
-        title: entry.getIn(['data', 'document', 'title']),
-        description: entry.getIn(['data', 'document', 'description']),
-        Images
-      }}
+      documents={{document}}
     />
   )
 }
@@ -25,7 +21,7 @@ const DocumentPagePreview = ({ entry }) => {
 DocumentPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
-  })
+  }),
 }
 
 export default DocumentPagePreview
