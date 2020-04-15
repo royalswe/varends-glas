@@ -184,32 +184,6 @@ $navbar-item-img-max-height: 2.75rem
   flex-basis: 35%
   margin: 0 1.5em 0 0
 
-// Featured columns
-.services-img img
-  width: 200px
-  height: 100%
-  z-index: 1
-.staggering
-  max-width: 1200px
-  margin: 0 auto
-
-  .columns
-    color: #333333
-
-  .decorative-rotated::before
-    width: 24em
-    height: 10em
-    background-color: $grey-lighter
-    position: absolute
-    content: ""
-    margin-top: 4%
-
-  div:nth-child(even)
-    flex-direction: row-reverse
-    .decorative-rotated::before
-      left: 18%
-      transform: rotate(20deg)
-
 // contact page
 .contact-section
   background-color: $vg-blue
@@ -434,14 +408,32 @@ $color_grey_dark: #737373
   // contact
   .contact-spacing
     padding-right: 5em 
-  // .triangle-element
-  //   position: absolute
-  //   top: 0
-  //   width: 56%
-  //   height: 0
-  //   border-bottom: 463px solid $vg-blue
-  //   border-right: 160px solid transparent
-  //   z-index: -1
+  // Featured columns
+  .services-img img
+    width: 200px
+    height: 100%
+    z-index: 1
+  .staggering
+    max-width: 1200px
+    margin: 0 auto
+
+    .columns
+      color: #333333
+
+    .decorative-rotated::before
+      width: 24em
+      //width: 80%
+      height: 10em
+      background-color: $grey-lighter
+      position: absolute
+      content: ""
+      margin-top: 4%
+
+    div:nth-child(even)
+      flex-direction: row-reverse
+      .decorative-rotated::before
+        left: 18%
+        transform: rotate(20deg)
 
 +touch
   .navbar-item.has-dropdown
