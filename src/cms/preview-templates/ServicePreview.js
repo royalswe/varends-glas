@@ -5,7 +5,6 @@ import { ServiceTemplate } from '../../templates/service'
 const ServicePreview = ({ entry, widgetFor }) => (
   <ServiceTemplate
     content={widgetFor('body')}
-    description={entry.getIn(['data', 'description'])}
     title={entry.getIn(['data', 'title'])}
   />
 )

@@ -1,58 +1,41 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import defaultImage from '../img/featured.jpg'
 
 class ServiceRoll extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
 
     return (
       <div className="columns is-multiline">
-        {posts &&
-          posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${
-                            post.frontmatter.title
-                          }`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                  </p>
-                </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Läs mer →
-                  </Link>
-                </p>
-              </article>
+        {posts && posts.map(({ node: post }) => (
+          <div className="blog-card" key={post.id}>
+            <div className="meta">
+              <div
+                className="photo"
+                style={{
+                  backgroundImage: `url(${
+                    !!post.frontmatter.featuredimage.childImageSharp
+                      ? post.frontmatter.featuredimage.childImageSharp.fluid.src
+                      : defaultImage
+                  })`,
+                }}
+              ></div>
             </div>
-          ))}
+            <div className="description">
+              <Link to={post.fields.slug}> <h1>{post.frontmatter.title}</h1></Link>
+              <h2>{post.frontmatter.subtitle}</h2>
+              <p>{post.frontmatter.description}</p>
+              <p className="read-more">
+                <Link to={post.fields.slug}>Läs mer</Link>
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
-    )
+    );
   }
 }
 
@@ -73,18 +56,19 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
               id
               fields {
                 slug
               }
               frontmatter {
                 title
+                subtitle
+                description
                 templateKey
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 300, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

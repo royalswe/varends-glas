@@ -15,7 +15,7 @@ const WideFeatures = ({ gridItems }) => {
             </picture>
           </div>
           <div className="column is-half decorative-rotated">
-            <div style={{padding: "1em"}}>
+            <div style={{padding: "1em", position:"relative"}}>
               <h3 style={{fontWeight: "bold", fontSize: "1.1em"}}>{item.title}</h3>
               <br />
               <p>{item.text}</p>

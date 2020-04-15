@@ -1,25 +1,28 @@
 ---
 templateKey: service
 title: Brandskyddspartier
+subtitle: Med brandglas vinner du tid som kan bli ovärderlig
+description: >
+    Värends glas breda utbud av uv-stabila brandglas som även klacificeras som säkerhetsglas räddar liv och skyddar människor samtidigt som de skyddar omgivande byggnader och dess inventarier. Våra brandglas skyddar mot brand, rök, värmestrålning och giftiga gaser.
 featuredpost: true
-featuredimage: /img/og-image.png
-description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
+featuredimage: /img/image_2B4.jpg
 ---
-![chemex](/img/og-image.png)
+![chemex](/img/home-jumbotron.jpg)
 
-This week we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts.
+Värends glas breda utbud av uv-stabila brandglas som även klacificeras som säkerhetsglas räddar liv och skyddar människor samtidigt som de skyddar omgivande byggnader och dess inventarier. Våra brandglas skyddar mot brand, rök, värmestrålning och giftiga gaser.
 
-In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is _"one of the best-designed products of modern times"_, and so is included in the collection of the Museum of Modern Art in New York City.
+## brandskyddsglas 
 
-## Fönster
+Valet av rätt brandglas eller brandskyddsglas om du hellre använder den benämningen påverkas av en rad faktorer. Förutsättningarna varierar mellan olika byggprojekt och därmed också kraven på glasets egenskaper och prestanda. Skydd mot värmestrålning och rökgaser med krav på olika brandklasser kan kombineras med exempelvis isolerglas och monteras på en rad olika sätt. Hos oss på Värends glas finner du rätt lösning för varje projekt.
 
-The Chemex Coffeemaker consists of an hourglass-shaped glass flask with a conical funnel-like neck (rather than the cylindrical neck of an Erlenmeyer flask) and uses proprietary filters, made of bonded paper (thicker-gauge paper than the standard paper filters for a drip-method coffeemaker) that removes most of the coffee oils, brewing coffee with a taste that is different than coffee brewed in other coffee-making systems; also, the thicker paper of the Chemex coffee filters may assist in removing cafestol, a cholesterol-containing compound found in coffee oils. Here’s three important tips newbies forget about:
+## Robusta brandskyddsglas för tuffa miljöer
 
-1. Always buy dedicated Chemex filters.
-2. Use a scale, don’t try to eyeball it.
-3. Never skip preheating the glass.
-4. Timing is key, don’t forget the clock.
+Alla brandskyddsglas som vi leverera är tillverkat av härdat, personsäkert glas. Detta innebär lättare och mer robusta glas än andra brandglas. Härdat glas innebär också minimal risk för bräckage vid hantering på lager, byggarbetsplatser och i samband med montering. I dag kan vi leverera glas som motstår en explosionsartad brand i mer än två timmar. Glaset är helt klart och innehåller inget trådnät. Vi skräddarsyr brandskyddsglas med möjlighet till bland annat ljuddämpning, säkerhet, skydd och design. Vi kan därför erbjuda det optimala bradglaset för varje brandskyddssituation
 
-The most visually distinctive feature of the Chemex is the heatproof wooden collar around the neck, allowing it to be handled and poured when full of hot water. This is turned, then split in two to allow it to fit around the glass neck. The two pieces are held loosely in place by a tied leather thong. The pieces are not tied tightly and can still move slightly, retained by the shape of the conical glass.
+Vårat utbud av brandskyddsglas
+1. Bra
+2. Bättre
+3. Bäst
+4. Värends Glas
 
-For a design piece that became popular post-war at a time of Modernism and precision manufacture, this juxtaposition of natural wood and the organic nature of a hand-tied knot with the laboratory nature of glassware was a distinctive feature of its appearance.
+

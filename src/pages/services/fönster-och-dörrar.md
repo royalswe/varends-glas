@@ -1,12 +1,12 @@
 ---
 templateKey: service
 title: Fönster och Dörrar
-description: Glas för alla hustyper
+subtitle: Glas för alla hustyper
+description: >
+    Värends glas breda utbud av uv-stabila brandglas som även klacificeras som säkerhetsglas räddar liv och skyddar människor samtidigt som de skyddar omgivande byggnader och dess inventarier. Våra brandglas skyddar mot brand, rök, värmestrålning och giftiga gaser.
 featuredpost: true
 featuredimage: /img/featured.jpg
 ---
-![Årets expansion](blob:https://varend.netlify.com/68b9ead1-fd0a-40c1-be80-88a25bd5ebaf "Årets expansion")  
-
        
 This week we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts.
      

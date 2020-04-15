@@ -29,7 +29,8 @@ collections:
     fields:
       - {label: Template Key, name: templateKey, widget: hidden, default: service}
       - {label: Title, name: title, widget: string}
-      - {label: Description, name: description, widget: text}
+      - {label: Sub Title, name: subtitle, widget: string, required: false}
+      - {label: Description, name: description, widget: text, required: false}
       - {label: Featured Post, name: featuredpost, widget: boolean, default: false}
       - {label: Featured Image, name: featuredimage, widget: image}
       - {label: Body, name: body, widget: markdown}
