@@ -10,9 +10,11 @@ const WideFeatures = ({ gridItems }) => {
       {gridItems.map((item, index) => (
         <div className="columns is-multiline is-gapless" key={index}>
           <div className="column is-half" style={{ MaxHeight: "15em" }}>
-            <picture className="services-img">
-              <PreviewCompatibleImage imageInfo={item} />
-            </picture>
+            {item.image &&
+              <picture className="services-img">
+                <PreviewCompatibleImage imageInfo={item} />
+              </picture>
+            }
           </div>
           <div className="column is-half decorative-rotated">
             <div style={{padding: "1em", position:"relative"}}>
