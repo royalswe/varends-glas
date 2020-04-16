@@ -28,6 +28,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: Template Key, name: templateKey, widget: hidden, default: service}
+      - {label: Image, name: image, widget: image, required: false}
       - {label: Title, name: title, widget: string}
       - {label: Sub Title, name: subtitle, widget: string, required: false}
       - {label: Description, name: description, widget: text, required: false}

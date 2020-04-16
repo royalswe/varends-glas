@@ -10,14 +10,25 @@ export const ServiceTemplate = ({
   contentComponent,
   description,
   title,
+  image,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <div className="content">
       {helmet || ''}
-      <div className="container content">
+      {image &&
+        <div
+          className="full-width-image-container margin-top-0"
+          style={{
+            backgroundImage: `url(${
+              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            })`,
+          }}
+        ></div>
+      }
+      <div className="section container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
@@ -28,7 +39,7 @@ export const ServiceTemplate = ({
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 
@@ -59,6 +70,7 @@ const Service = ({ data }) => {
           </Helmet>
         }
         title={post.frontmatter.title}
+        image={post.frontmatter.image}
       />
     </Layout>
   )
@@ -79,6 +91,13 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1400, quality: 64) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         description
       }
     }

@@ -1,6 +1,7 @@
 ---
 templateKey: service
 title: Fönster och Dörrar
+image: /img/home-jumbotron.jpg
 subtitle: Glas för alla hustyper
 description: >
     Värends glas breda utbud av uv-stabila brandglas som även klacificeras som säkerhetsglas räddar liv och skyddar människor samtidigt som de skyddar omgivande byggnader och dess inventarier. Våra brandglas skyddar mot brand, rök, värmestrålning och giftiga gaser.
