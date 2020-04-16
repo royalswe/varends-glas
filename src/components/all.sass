@@ -51,15 +51,28 @@ body
   right: 50%
   margin: 2em -50vw
 
+.jumbotron-container
+  overflow: hidden
+  display: inline-block
+
 .full-width-image
-    width: 100vw
-    height: 400px
-    min-height: calc(100vh - 5rem)
-    background-size: cover
-    background-position: bottom
-    display: flex
-    justify-content: center
-    align-items: center
+  width: 100vw
+  height: 400px
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+  animation-fill-mode: forwards
+  animation-duration: 10s
+  animation-name: zoomIn
+
+@keyframes zoomIn
+  0%
+    transform: scale(1.1)
+
+  100%
+    transform: scale(1.0)
 
 .btn
     display: inline-block
@@ -405,6 +418,11 @@ $color_grey_dark: #737373
       transform: scaleX(1)
 
 +tablet
+  // fixed scroll effect don't work on all mobiles
+  .fixed-scroll-image
+    min-height: calc(100vh - 5rem)
+    background-position: top left
+    background-attachment: fixed
   // contact
   .contact-spacing
     padding-right: 5em 

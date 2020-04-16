@@ -23,14 +23,13 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
+      <div className="parent">
       <div
-        className="full-width-image margin-top-0"
+        className="full-width-image fixed-scroll-image img-zoom--slowmo"
         style={{
           backgroundImage: `url(${
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-          backgroundPosition: `top left`,
-          backgroundAttachment: `fixed`,
+          })`
         }}
       >
         <div
@@ -56,6 +55,7 @@ export const IndexPageTemplate = ({
           >
             {title}
           </h1>
+          
           <h3
             className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen animate fade-in"
             style={{
@@ -84,6 +84,7 @@ export const IndexPageTemplate = ({
           >
             Kontakta oss
           </Link>
+        </div>
         </div>
       </div>
       <section className="section">
