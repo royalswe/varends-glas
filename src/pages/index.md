@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Glasmästeriet i Kronoberg
+title: din Schüco partner Kronoberg
 image: /img/home-jumbotron.jpg
 heading: SCHÜCO
-subheading: Vi hjälper dig med fönster & glaspartier av högsta kvalitet
+subheading: din lokala tillverkare av aluminium och glaspartier.
 mainpitch:
   title: Varför Värends glas
   description: >
@@ -18,22 +18,30 @@ intro:
   blurbs:
     - image: /img/circle-snow-flake.png
       text: >
-        Dubbelglassystem som ger dig möjlighet att njuta av ditt uterum en lång bit in på hösten. Här hittar du våra glaspartier och uterum, Basic och Design
+        Dubbelglassystem som ger dig möjlighet att njuta av ditt uterum en lång
+        bit in på hösten. Här hittar du våra glaspartier och uterum, Basic och
+        Design
     - image: /img/circle-sun.png
       text: >
-        Enkelglassystem som ger dig möjlighet att njuta av ditt uterum en lång bit in på hösten. Här hittar du våra glaspartier och Dörrar, Basic och Design
+        Enkelglassystem som ger dig möjlighet att njuta av ditt uterum en lång
+        bit in på hösten. Här hittar du våra glaspartier och Dörrar, Basic och
+        Design
     - image: /img/circle-weather.png
       text: >
-        Trippelglassystem som ger dig möjlighet att njuta av ditt uterum en lång bit in på hösten. Här hittar du våra glaspartier och uterum fönster, Basic och Design
+        Trippelglassystem som ger dig möjlighet att njuta av ditt uterum en lång
+        bit in på hösten. Här hittar du våra glaspartier och uterum fönster,
+        Basic och Design
   heading: Glas för alla säsonger
   description: >
-    Sommar, höst vinter eller vår? Vi har det som krävs.
-    Ett bra uterum ska vara anpassat efter dina behov och din livssituation. Därför är det viktigt att du funderar igenom hur du vill använda ditt uterum innan du börjar bygga det – det är nämligen nyckeln till hur du ska utforma det.
+    Sommar, höst vinter eller vår? Vi har det som krävs. Ett bra uterum ska vara
+    anpassat efter dina behov och din livssituation. Därför är det viktigt att
+    du funderar igenom hur du vill använda ditt uterum innan du börjar bygga det
+    – det är nämligen nyckeln till hur du ska utforma det.
 main:
   blurbs:
     - alt: Min bild
-      image: /img/schueco_villa_munsoeterrassen_glasfasad.jpg
       title: Våra glas är bra
+      image: /img/schueco_villa_munsoeterrassen_glasfasad.jpg
       link: about
       text: >
         We sell green and roasted coffee beans that are sourced directly from
@@ -42,8 +50,8 @@ main:
         local communities. Check our post or contact us directly for current
         availability.
     - alt: Min fönster
-      image: /img/image_2B4.jpg
       title: Våra glas är bra
+      image: /img/image_2B4.jpg
       link: about
       text: >
         We sell green and roasted coffee beans that are sourced directly from
@@ -52,8 +60,8 @@ main:
         local communities. Check our post or contact us directly for current
         availability.
     - alt: Min katt
-      image: /img/schueco_villa_munsoeterrassen_glasfasad.jpg
       title: Våra glas är bra
+      image: /img/schueco_villa_munsoeterrassen_glasfasad.jpg
       link: about
       text: >
         We sell green and roasted coffee beans that are sourced directly from
