@@ -6,37 +6,44 @@ heading: SCHÜCO
 subheading: din lokala tillverkare av aluminium och glaspartier.
 mainpitch:
   title: Varför Värends glas
-  description: >
-    Värends glas är ett lokalt glasmästeri med egen tillverkning av skjut- och
-    fasadpartier. Vi arbetar i hela Kronobergs län, gör gärna hembesök och ger
-    förslag på vad just du behöver. Varje hus är unikt och självklart bygger vi
-    alltid kundanpassat utan extra tillägg. 
+  description: >-
+    Värends Glas AB tillverkar, levererar och monterar alla typer av aluminium
+    och glaspartier. All tillverkning sker i Alvesta och alltid efter dina
+    önskemål. Vi samarbetar med världsledande Schüco och vi har möjlighet att
+    leverera hela deras sortiment, utan mellanhänder. 
+
+
+    Vi har även en avdelning för traditionellt glasmästeriarbete och utför alla
+    möjliga typer av glasarbeten som t.ex reparationer, isolerglas,
+    interiörglas, duschväggar m.m.
 description: >-
   Vi tillverkar och säljer schücos breda kvalitetssortiment Välkommen in I vårt
   vårt visningsrum
 intro:
   blurbs:
     - image: /img/circle-snow-flake.png
-      text: >
-        Dubbelglassystem som ger dig möjlighet att njuta av ditt uterum en lång
-        bit in på hösten. Här hittar du våra glaspartier och uterum, Basic och
-        Design
+      text: >-
+        Oisolerade enkelglas -ALUPLUS  Framtaget för vår-sommar-höst i ett
+        oisolerat uterum. Panoramaprfiler med dämpning ger en mjuk gång och
+        stabila skjutdörrar och fönster.
     - image: /img/circle-sun.png
-      text: >
-        Enkelglassystem som ger dig möjlighet att njuta av ditt uterum en lång
-        bit in på hösten. Här hittar du våra glaspartier och Dörrar, Basic och
-        Design
+      text: >-
+        Tvåglas - Schüco ASS32SC och ASS50
+
+        Om du planerar att bygga ett isolerat uterum med någon form av
+        uppvärmning året runt är det denna typ vi rekommenderar.
     - image: /img/circle-weather.png
       text: >
-        Trippelglassystem som ger dig möjlighet att njuta av ditt uterum en lång
-        bit in på hösten. Här hittar du våra glaspartier och uterum fönster,
-        Basic och Design
-  heading: Glas för alla säsonger
+        Treglas - ASE60/80 eller Vikdörrar i form av ASS70/80 FD
+
+        Dessa profilsystem är framtagna för husets klimatskal. För att du ska
+        kunna släppa in naturen i vardagsrummet!
+  heading: Aluminium och glas för årets alla säsonger
   description: >
-    Sommar, höst vinter eller vår? Vi har det som krävs. Ett bra uterum ska vara
-    anpassat efter dina behov och din livssituation. Därför är det viktigt att
-    du funderar igenom hur du vill använda ditt uterum innan du börjar bygga det
-    – det är nämligen nyckeln till hur du ska utforma det.
+    Vad är Era önskemål? Ett bra uterum ska vara anpassat efter dina behov och
+    din livssituation. Därför är det viktigt att du funderar igenom hur du vill
+    använda ditt uterum innan du börjar bygga det – det är nämligen nyckeln till
+    hur det ska utformas.
 main:
   blurbs:
     - alt: Min bild
