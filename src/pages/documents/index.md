@@ -1,9 +1,11 @@
 ---
 templateKey: document-page
-title: Våra dokument
+title: Dokumentbank
 image: /img/home-jumbotron.jpg
 heading: Samlade dokument
-description: Här samlar vi kataloger och andra dokument som kan hjälpa dig med våra produkter. Saknar du någon information, vänligen kontakta oss.
+description: >-
+  Här samlar vi kataloger och andra dokument som kan hjälpa dig med våra
+  produkter. Saknar du någon information, vänligen kontakta oss.
 documents:
   document:
     - title: Produktkatalog
