@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-title: din Schüco partner Kronoberg
+title: Värends Glas AB Alvesta
 image: /img/home-jumbotron.jpg
-heading: SCHÜCO
+heading: Värend Glas Schüco partner Kronoberg
 subheading: din lokala tillverkare av aluminium och glaspartier.
 mainpitch:
   title: Varför Värends glas
@@ -17,8 +17,8 @@ mainpitch:
     möjliga typer av glasarbeten som t.ex reparationer, isolerglas,
     interiörglas, duschväggar m.m.
 description: >-
-  Vi tillverkar och säljer schücos breda kvalitetssortiment Välkommen in I vårt
-  vårt visningsrum
+  Vi tillverkar och säljer hela Schücos breda kvalitetssortiment välkommen in I
+  vårt vårt visningsrum
 intro:
   blurbs:
     - image: /img/circle-snow-flake.png
