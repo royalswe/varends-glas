@@ -162,7 +162,7 @@ export const AboutPageQuery = graphql`query AboutPage($id: String!) {
         blurbs {
           image {
             childImageSharp {
-              gatsbyImageData(width: 240, quality: 92, layout: FULL_WIDTH)
+              gatsbyImageData(quality: 92, layout: FULL_WIDTH)
             }
             extension
             publicURL

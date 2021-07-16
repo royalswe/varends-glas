@@ -6,7 +6,7 @@ import Features from "../components/Features";
 import WideFeatures from "../components/WideFeatures";
 import Contact from "../components/Contact";
 import Content, { HTMLContent } from "../components/Content";
-import { getImage, getSrc, GatsbyImage } from "gatsby-plugin-image"
+import { getSrc } from "gatsby-plugin-image";
 
 
 export const IndexPageTemplate = ({

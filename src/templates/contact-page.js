@@ -4,8 +4,8 @@ import { graphql } from 'gatsby'
 import { getSrc } from "gatsby-plugin-image"
 import Layout from '../components/Layout'
 import Employees from '../components/Employees'
-import Contact from "../components/Contact";
-import Content, { HTMLContent } from "../components/Content";
+import Contact from "../components/Contact"
+import Content, { HTMLContent } from "../components/Content"
 
 export const ContactPageTemplate = ({
   title,

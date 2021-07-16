@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { getImage, getSrc, GatsbyImage } from "gatsby-plugin-image"
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
 
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
@@ -9,7 +9,6 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   
 
   if (!!image && !!image.childImageSharp) {
-    console.log(imageStyle, alt);
     return (
       <GatsbyImage
         image={getImage(image)}
@@ -22,21 +21,9 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     return <GatsbyImage image={childImageSharp.fluid} style={imageStyle} alt={alt} />;
   }
 
-  if (!!image && typeof image === 'string')
+  if (!!image && typeof image === 'string') {
     return <img style={imageStyle} src={image} alt={alt} />
-
-  // OLD
-  // if (!!image && !!image.childImageSharp) {
-  //   return <Img style={imageStyle} fluid={image.childImageSharp.gatsbyImageData} alt={alt} />;
-  // }
-
-  // if (!!childImageSharp) {
-  //   return <Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />
-  // }
-
-  // if (!!image && typeof image === 'string'){
-  //   return <img style={imageStyle} src={image} alt={alt} />
-  // }
+  }
   // svg support
   if (!childImageSharp && image.extension === 'svg') {
     return <img style={imageStyle} src={image.publicURL} alt={alt} />
