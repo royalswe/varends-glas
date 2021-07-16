@@ -74,15 +74,14 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-  fmImagesToRelative(node) // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
-    let value = createFilePath({ node, getNode })
-    value = value.replace(/å/g, 'a').replace(/ä/g, 'a').replace(/ö/g, 'o'); // convert åäö to aao
+    let slug = createFilePath({ node, getNode })
+    slug = slug.replace(/å/g, 'a').replace(/ä/g, 'a').replace(/ö/g, 'o'); // convert åäö to aao
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: slug,
     })
   }
 }

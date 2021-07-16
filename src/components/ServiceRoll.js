@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { getSrc } from "gatsby-plugin-image"
 import { Link, graphql, StaticQuery } from 'gatsby'
 import defaultImage from '../img/featured.jpg'
 
@@ -18,7 +19,7 @@ class ServiceRoll extends React.Component {
                 style={{
                   backgroundImage: `url(${
                     !!post.frontmatter.featuredimage.childImageSharp
-                      ? post.frontmatter.featuredimage.childImageSharp.fluid.src
+                      ? getSrc(post.frontmatter.featuredimage)
                       : defaultImage
                   })`,
                 }}
@@ -47,38 +48,35 @@ ServiceRoll.propTypes = {
   }),
 }
 
-export default () => (
+const ServiceRollQuery = () => (
   <StaticQuery
-    query={graphql`
-      query ServiceRollQuery {
-        allMarkdownRemark(
-          filter: { frontmatter: { templateKey: { eq: "service" } } }
-        ) {
-          edges {
-            node {
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                subtitle
-                description
-                templateKey
-                featuredpost
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 300, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
+    query={graphql`query ServiceRollQuery {
+  allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "service"}}}) {
+    edges {
+      node {
+        id
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          subtitle
+          description
+          templateKey
+          featuredpost
+          featuredimage {
+            childImageSharp {
+              gatsbyImageData(width: 300, quality: 100, layout: CONSTRAINED)
             }
           }
         }
       }
-    `}
+    }
+  }
+}
+`}
     render={(data, count) => <ServiceRoll data={data} count={count} />}
   />
 )
+
+export default ServiceRollQuery;

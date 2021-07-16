@@ -6,6 +6,8 @@ import Features from "../components/Features";
 import WideFeatures from "../components/WideFeatures";
 import Contact from "../components/Contact";
 import Content, { HTMLContent } from "../components/Content";
+import { getImage, getSrc, GatsbyImage } from "gatsby-plugin-image"
+
 
 export const IndexPageTemplate = ({
   image,
@@ -20,71 +22,70 @@ export const IndexPageTemplate = ({
   contentComponent
 }) => {
   const PostContent = contentComponent || Content;
-
   return (
     <div>
-      <div className="parent">
-      <div
-        className="full-width-image fixed-scroll-image img-zoom--slowmo"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`
-        }}
-      >
+      <div className="jumbotron-container">
         <div
+          className="full-width-image fixed-scroll-image img-zoom--slowmo"
           style={{
-            display: "flex",
-            height: "200px",
-            lineHeight: "1",
-            textAlign: "center",
-            justifyContent: "space-around",
-            alignItems: "left",
-            flexDirection: "column",
+            backgroundImage: `url(${
+              !!image.childImageSharp ? getSrc(image) : image
+            })`,
           }}
         >
-          <h1
-            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen animate fade-in"
+          <div
             style={{
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-              color: "#fff",
+              display: "flex",
+              height: "200px",
               lineHeight: "1",
-              padding: "0.25em",
-              letterSpacing: "2px",
-            }}
-          >
-            {title}
-          </h1>
-          
-          <h3
-            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen animate fade-in"
-            style={{
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-              color: "#fff",
-              lineHeight: "1",
-              padding: "0.25em",
               textAlign: "center",
-              letterSpacing: "2px",
+              justifyContent: "space-around",
+              alignItems: "left",
+              flexDirection: "column",
             }}
           >
-            {subheading}
-          </h3>
-          <Link
-            className="button is-outlined is-large animate fade-in-up"
-            style={{
-              color: "#696969",
-              backgroundColor: "#fff",
-              borderColor: "#696969",
-              borderWidth: "3px",
-              alignSelf: "center",
-              padding: "25px",
-              marginTop: "25px",
-            }}
-            to="/contact"
-          >
-            Kontakta oss
-          </Link>
-        </div>
+            <h1
+              className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen animate fade-in"
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                color: "#fff",
+                lineHeight: "1",
+                padding: "0.25em",
+                letterSpacing: "2px",
+              }}
+            >
+              {title}
+            </h1>
+
+            <h3
+              className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen animate fade-in"
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                color: "#fff",
+                lineHeight: "1",
+                padding: "0.25em",
+                textAlign: "center",
+                letterSpacing: "2px",
+              }}
+            >
+              {subheading}
+            </h3>
+            <Link
+              className="button is-outlined is-large animate fade-in-up"
+              style={{
+                color: "#696969",
+                backgroundColor: "#fff",
+                borderColor: "#696969",
+                borderWidth: "3px",
+                alignSelf: "center",
+                padding: "25px",
+                marginTop: "25px",
+              }}
+              to="/contact"
+            >
+              Kontakta oss
+            </Link>
+          </div>
         </div>
       </div>
       <section className="section">
@@ -118,25 +119,24 @@ export const IndexPageTemplate = ({
               </div>
             </div>
             <div className="content">
-            <WideFeatures gridItems={main.blurbs} />
+              <WideFeatures gridItems={main.blurbs} />
 
-            <div className="columns" style={{ padding: "5em" }}>
-              <div className="column is-12 has-text-centered">
-                <Link className="btn" to="/services">
-                  Se våra tjänster
-                </Link>
+              <div className="columns" style={{ padding: "5em" }}>
+                <div className="column is-12 has-text-centered">
+                  <Link className="btn" to="/services">
+                    Se våra tjänster
+                  </Link>
+                </div>
               </div>
-            </div>
-           
-            <div className="columns">
-              <div className="column is-6">
-                <PostContent content={content} />
+
+              <div className="columns">
+                <div className="column is-6">
+                  <PostContent content={content} />
+                </div>
+                <div className="column is-6">
+                  <Contact />
+                </div>
               </div>
-              <div className="column is-6">
-                <Contact />
-              </div>
-            </div>
-            
             </div>
           </div>
         </div>
@@ -190,60 +190,53 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
-export const pageQuery = graphql`
-  query IndexPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
+export const pageQuery = graphql`query IndexPage($id: String!) {
+  markdownRemark(id: {eq: $id}) {
+    html
+    frontmatter {
+      title
+      image {
+        childImageSharp {
+          gatsbyImageData(quality: 64, layout: FULL_WIDTH)
+        }
+      }
+      heading
+      subheading
+      mainpitch {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 64) {
-              ...GatsbyImageSharpFluid
+        description
+      }
+      description
+      intro {
+        blurbs {
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 240, height: 240, quality: 64, layout: CONSTRAINED)
             }
+            extension
+            publicURL
           }
+          text
         }
         heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
         description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-              extension
-              publicURL
+      }
+      main {
+        blurbs {
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 64, layout: FULL_WIDTH)
             }
-            text
+            extension
+            publicURL
           }
-          heading
-          description
-        }
-        main {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 800, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-              extension
-              publicURL
-            }
-            alt
-            title
-            text
-            link
-          }
+          alt
+          title
+          text
+          link
         }
       }
     }
   }
+}
 `;

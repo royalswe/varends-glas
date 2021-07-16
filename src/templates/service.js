@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import { getSrc } from "gatsby-plugin-image"
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -23,7 +24,7 @@ export const ServiceTemplate = ({
           className="full-width-image-container margin-top-0"
           style={{
             backgroundImage: `url(${
-              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+              !!image.childImageSharp ? getSrc(image) : image
             })`,
           }}
         ></div>
@@ -40,7 +41,7 @@ export const ServiceTemplate = ({
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 ServiceTemplate.propTypes = {
@@ -84,22 +85,19 @@ Service.propTypes = {
 
 export default Service
 
-export const pageQuery = graphql`
-  query ServiceByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 1400, quality: 64) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+export const pageQuery = graphql`query ServiceByID($id: String!) {
+  markdownRemark(id: {eq: $id}) {
+    id
+    html
+    frontmatter {
+      title
+      image {
+        childImageSharp {
+          gatsbyImageData(quality: 64, layout: FULL_WIDTH)
         }
-        description
       }
+      description
     }
   }
+}
 `

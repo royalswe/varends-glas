@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { getSrc } from "gatsby-plugin-image"
 import Layout from '../components/Layout'
 import WideFeatures from '../components/WideFeatures'
 import Testimonials from '../components/Testimonials'
@@ -22,7 +23,7 @@ export const AboutPageTemplate = ({
       className="full-width-image-container margin-top-0"
       style={{
         backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          !!image.childImageSharp ? getSrc(image) : image
         })`,
       }}
     >
@@ -85,7 +86,7 @@ export const AboutPageTemplate = ({
                 style={{
                   backgroundImage: `url(${
                     fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
+                      ? getSrc(fullImage)
                       : fullImage
                   })`,
                 }}
@@ -146,81 +147,68 @@ AboutPage.propTypes = {
 
 export default AboutPage
 
-export const AboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 1400, quality: 64) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+export const AboutPageQuery = graphql`query AboutPage($id: String!) {
+  markdownRemark(id: {eq: $id}) {
+    frontmatter {
+      title
+      image {
+        childImageSharp {
+          gatsbyImageData(quality: 64, layout: FULL_WIDTH)
         }
+      }
+      heading
+      description
+      intro {
+        blurbs {
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 240, quality: 92, layout: FULL_WIDTH)
+            }
+            extension
+            publicURL
+          }
+          title
+          text
+        }
+      }
+      main {
         heading
         description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 92) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-              extension
-              publicURL
-            }
-            title
-            text
-          }
-        }
-        main {
-          heading
-          description
-          image1 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          image2 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          image3 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+        image1 {
+          alt
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
             }
           }
         }
-        testimonials {
-          author
-          quote
+        image2 {
+          alt
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
+            }
+          }
         }
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+        image3 {
+          alt
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 72, layout: FULL_WIDTH)
             }
           }
         }
       }
+      testimonials {
+        author
+        quote
+      }
+      full_image {
+        childImageSharp {
+          gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+        }
+      }
     }
   }
+}
 `

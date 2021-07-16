@@ -26,7 +26,7 @@ ServiceLinks.propTypes = {
   })
 };
 
-export default props => (
+const ServiceLinksQuery = () => (
   <StaticQuery
     query={graphql`
       query ServiceLinksQuery {
@@ -50,3 +50,5 @@ export default props => (
     render={data => <ServiceLinks data={data} />}
   />
 );
+
+export default ServiceLinksQuery;

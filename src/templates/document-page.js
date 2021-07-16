@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { getSrc } from "gatsby-plugin-image"
 import Layout from '../components/Layout'
 import Documents from '../components/Documents'
 
@@ -16,7 +17,7 @@ export const DocumentPageTemplate = ({
     className="full-width-image-container margin-top-0"
     style={{
       backgroundImage: `url(${
-        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+        !!image.childImageSharp ? getSrc(image) : image
       })`,
     }}
   >
@@ -94,37 +95,32 @@ DocumentPage.propTypes = {
 
 export default DocumentPage
 
-export const documentsPageQuery = graphql`
-  query DocumentPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 1400, quality: 64) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+export const documentsPageQuery = graphql`query DocumentPage($id: String!) {
+  markdownRemark(id: {eq: $id}) {
+    frontmatter {
+      title
+      image {
+        childImageSharp {
+          gatsbyImageData(quality: 64, layout: FULL_WIDTH)
         }
-        description
-        heading
-        documents {
-          document {
-            title
-            description
-            file {
-              publicURL
-            }
-            image {
-              childImageSharp {
-                fluid(maxWidth: 640, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+      }
+      description
+      heading
+      documents {
+        document {
+          title
+          description
+          file {
+            publicURL
+          }
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 640, quality: 100, layout: CONSTRAINED)
             }
           }
         }
       }
     }
   }
+}
 `

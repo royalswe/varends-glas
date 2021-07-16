@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { getSrc } from "gatsby-plugin-image"
 import Layout from '../components/Layout'
 import Employees from '../components/Employees'
 import Contact from "../components/Contact";
@@ -23,7 +24,7 @@ export const ContactPageTemplate = ({
         className="full-width-image-container margin-top-0"
         style={{
           backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            !!image.childImageSharp ? getSrc(image) : image
           })`,
           marginBottom: "0",
         }}
@@ -114,37 +115,32 @@ ContactPageTemplate.propTypes = {
 
 export default ContactPage
 
-export const documentsPageQuery = graphql`
-  query ContactPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 1400, quality: 64) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+export const documentsPageQuery = graphql`query ContactPage($id: String!) {
+  markdownRemark(id: {eq: $id}) {
+    html
+    frontmatter {
+      title
+      image {
+        childImageSharp {
+          gatsbyImageData(quality: 64, layout: FULL_WIDTH)
         }
-        description
-        heading
-        employees {
-          employee {
-            name
-            phone
-            email
-            title
-            image {
-              childImageSharp {
-                fluid(maxWidth: 640, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+      }
+      description
+      heading
+      employees {
+        employee {
+          name
+          phone
+          email
+          title
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 640, quality: 64, layout: CONSTRAINED)
             }
           }
         }
       }
     }
   }
+}
 `
