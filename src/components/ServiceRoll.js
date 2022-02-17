@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { getSrc } from "gatsby-plugin-image"
 import { Link, graphql, StaticQuery } from 'gatsby'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import defaultImage from '../img/featured.jpg'
 
 class ServiceRoll extends React.Component {

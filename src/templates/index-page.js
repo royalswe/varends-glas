@@ -197,7 +197,7 @@ export const pageQuery = graphql`query IndexPage($id: String!) {
       title
       image {
         childImageSharp {
-          gatsbyImageData(quality: 64, layout: FULL_WIDTH)
+          gatsbyImageData(quality: 64, layout: FULL_WIDTH, placeholder: BLURRED)
         }
       }
       heading
